@@ -77,5 +77,5 @@ def convert_excel_to_json_parts(items_per_part=200, language="japanese"):
 if __name__ == "__main__":
     # Example usage
     print("Converting Excel to JSON parts...")
-    result = convert_excel_to_json_parts(200, "japanese")
+    result = convert_excel_to_json_parts(200, "espanol")
     print(f"Created files: {result}")

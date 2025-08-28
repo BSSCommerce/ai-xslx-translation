@@ -303,9 +303,9 @@ def main():
                        help="Items per JSON part (default: 200)")
     parser.add_argument("--file", "-f", 
                        help="Translate single file (without extension)")
-    parser.add_argument("--status", "-s", action="store_true",
+    parser.add_argument("--status", "-s", default=False, action="store_true",
                        help="Show pipeline status only")
-    parser.add_argument("--convert-to-json", "-c", action="store_true",
+    parser.add_argument("--convert-to-json", "-c", default=False,
                        help="Convert Excel to JSON parts")
     parser.add_argument("--full", action="store_true",
                        help="Run full pipeline (Excel → JSON → Translate → Merge)")
