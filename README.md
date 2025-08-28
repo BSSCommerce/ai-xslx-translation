@@ -3,19 +3,34 @@
 This system converts Excel files to JSON parts and translates them using Google's Gemini AI model.
 
 ## Setup
+1. Install python virtual environment
+   ```bash
+   python -m venv .venv
+   ```
+2. Active virtual environment
+   
+   Linux:
+   ```bash
+   source .venv/bin/activate
+   ```
 
-1. **Install dependencies:**
+   Windows:
+
+   ```bash
+   .venv/Scripts/Activate
+   ```
+3. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Set up environment variables:**
+4. **Set up environment variables:**
    Create a `.env` file in the project root with your Gemini API key:
    ```
    GEMINI_API_KEY=your_actual_api_key_here
    ```
    
-   Get your API key from: [Google AI Studio](https://makersuite.google.com/app/apikey)
+   Get your API key from: [Google AI Studio](https://aistudio.google.com/app/apikey)
 
 ## Core Modules
 
@@ -98,120 +113,6 @@ Overall Status: ✅ Complete
 📊 Final Excel: ✅ Created
 ```
 
-### 2. Text to JSON Converter (`text_to_json.py`)
-
-This module cleans and converts AI translation responses to clean JSON format, handling common artifacts and formatting issues.
-
-#### Features
-- **AI Response Cleaning**: Removes markdown formatting and common AI artifacts
-- **Batch Processing**: Process multiple translation files at once
-- **Error Recovery**: Robust error handling with detailed logging
-- **Format Validation**: Ensures output is valid JSON
-- **Flexible Input**: Handles various AI response formats
-
-#### Core Functions
-
-**`clean_ai_response_to_json(ai_response: str) -> str`**
-- Converts Google AI's markdown-wrapped JSON responses to clean JSON
-- Handles both ```json and ``` code block formats
-- Falls back to using entire response if no code blocks found
-
-**`clean_common_artifacts(content: str) -> str`**
-- Removes common AI response prefixes/suffixes
-- Cleans extra whitespace and newlines
-- Extracts JSON object boundaries
-
-**`process_translation_file(input_file: str, output_file: str = None) -> dict`**
-- Processes a single translation file
-- Generates cleaned output filename automatically
-- Returns processing results with error handling
-
-**`batch_process_translations(input_dir: str, output_dir: str = None) -> list`**
-- Processes all translation files in a directory
-- Creates organized output structure
-- Returns comprehensive processing results
-
-#### Usage Examples
-
-**Process Single File:**
-```python
-from text_to_json import process_translation_file
-
-# Process with auto-generated output filename
-result = process_translation_file("output/japanese/p1.json")
-
-# Process with custom output filename
-result = process_translation_file("output/japanese/p1.json", "cleaned/p1_clean.json")
-```
-
-**Batch Process Directory:**
-```python
-from text_to_json import batch_process_translations
-
-# Process all files in output/japanese/
-results = batch_process_translations("output/japanese")
-
-# Process with custom output directory
-results = batch_process_translations("output/japanese", "cleaned/japanese")
-```
-
-**Direct Function Usage:**
-```python
-from text_to_json import clean_ai_response_to_json, clean_common_artifacts
-
-# Clean AI response
-cleaned_json = clean_ai_response_to_json(ai_response_text)
-
-# Clean common artifacts
-final_content = clean_common_artifacts(cleaned_json)
-```
-
-#### Command Line Usage
-
-```bash
-# Process single file
-python text_to_json.py
-
-# The script includes example usage for:
-# - Single file processing: output/japanese/p1.json
-# - Batch processing: output/japanese/ directory
-```
-
-#### Input/Output Handling
-
-**Input Formats Supported:**
-- Raw AI responses with markdown code blocks
-- Plain text responses
-- JSON with extra formatting
-- Mixed content with AI artifacts
-
-**Output Features:**
-- Clean, valid JSON format
-- Organized file structure
-- Error logging and reporting
-- Processing status tracking
-
-**Example Input (AI Response):**
-```markdown
-Here is the translation:
-
-```json
-{
-  "key1": "translated_value1",
-  "key2": "translated_value2"
-}
-```
-
-The translation is complete.
-```
-
-**Example Output (Cleaned JSON):**
-```json
-{
-  "key1": "translated_value1",
-  "key2": "translated_value2"
-}
-```
 
 ## Complete Workflow Examples
 
