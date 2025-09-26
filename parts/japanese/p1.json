@@ -1,200 +1,498 @@
 {
-  "Additional information": "",
-  "Basics": "",
-  "Blog & Page": "",
-  "Collections": "",
-  "Brand Trust": "",
-  "Cross-Selling": "",
-  "Forms": "",
-  "Purchase & Pricing": "",
-  "Utilities & Layout": "",
-  "Promotions": "",
-  "Products": "",
-  "Storytelling": "",
-  "Trust & Social Proof": "",
-  "Theme mode": "",
-  "Enable theme mode": "",
-  "Use device settings": "",
-  "Allow manual switch": "",
-  "Select mode": "",
-  "Default mode": "",
-  "Light": "",
-  "Dark": "",
-  "Colors": "",
-  "Colors (Dark Theme)": "",
-  "Background": "",
-  "Button": "",
-  "Text link": "",
-  "Text link (light)": "",
-  "Text link (dark)": "",
-  "Line and borders": "",
-  "Error": "",
-  "Success": "",
-  "Image treatment": "",
-  "Cart dot": "",
-  "Cart dot text": "",
-  "Rating icons": "",
-  "General": "",
-  "Buttons": "",
-  "Secondary colors": "",
-  "Heading and title": "",
-  "Heading highlight": "",
-  "Primary button": "",
-  "Primary button text": "",
-  "Price": "",
-  "Sale price": "",
-  "Primary button hover": "",
-  "Primary button hover text": "",
-  "Secondary button text": "",
-  "Secondary button": "",
-  "Line": "",
-  "Typography": "",
-  "Base size": "",
-  "Letter spacing": "",
-  "Text transform": "",
-  "Capitalize": "",
-  "Uppercase": "",
-  "Lowercase": "",
-  "Menu font": "",
-  "Button font": "",
-  "Highlight font": "",
-  "Highlight size": "",
-  "Heading highlight size is calculated based on the percentage of the Heading base size above.": "",
-  "Font": "",
-  "Selecting a different font can affect the speed of your store. [Learn more about system fonts.](https://help.shopify.com/manual/online-store/os/store-speed/improving-speed#fonts)": "",
-  "Headings": "",
-  "Body": "",
-  "Font size scale": "",
-  "Marker": "",
-  "Wrap your text between [] to add heading highlights. E.g: Adding [marker] will underline [highlight] text.": "",
-  "Underline": "",
-  "Font highlight": "",
-  "Product swatches": "",
-  "The settings below automatically add color swatches to the filter in collection and search page.": "",
-  "Filter": "",
-  "To filter using additional color or image values, create metaobjects and metaobject references, then change the settings below as per your preferences. [Learn about showing visual filters using metaobjects.](https://help.shopify.com/manual/online-store/search-and-discovery/filters#visual-filters)": "",
-  "Display text next to swatches": "",
-  "Visual value style": "",
-  "Compact": "",
-  "Swatches shown by default": "",
-  "Select 0 to show all available swatches on product cards.": "",
-  "Pre-order": "",
-  "Button label on product card": "",
-  "Pre-order message in shopping cart": "",
-  "Highlighted features": "",
-  "Showcase standout product qualities on cards to communicate value at a glance and support quicker, more confident purchase decisions. Learn more in our [user guide](https://support.omnithemes.com/blogs/theme-settings/custom-text-on-product-cards).": "",
-  "Top of card": "",
-  "Below product title": "",
-  "Below product price": "",
-  "Background color(Light)": "",
-  "Background color(Dark)": "",
-  "Standard (3:4)": "",
-  "Image effect": "",
-  "Reveal second image": "",
-  "Image carousel": "",
-  "To trigger effect, hover image on desktop and double tap within image on mobile": "",
-  "Text swatches": "",
-  "Swatches types on product card": "",
-  "Color": "",
-  "Both": "",
-  "Swatch size": "",
-  "Text option name": "",
-  "Text option values": "",
-  "Fill in the name(s) of the option used as text swatch, phrases of different languages are separated by a comma (E.g. Size, Taille).": "",
-  "One 'option name:value' per line.": "",
-  "Color option name": "",
-  "Fill in all the name(s) of the color option used in the store, phrases of different languages are separated by a comma. (E.g. Color, Colour, Couleur).": "",
-  "Color swatch values": "",
-  "One 'color name:value' per line. Up to three colors can be used to show vertical stripes. E.g.: 'Red Blue Stripes:#e22#22e'": "",
-  "To use an image for color swatch, [upload a PNG image](/admin/settings/files) with the file name matching the color name, and spaces replaced by hyphens. E.g. for 'Hot Pink', upload 'hot-pink.png'.": "",
-  "Enable on product cards": "",
-  "Replace color options with variant images": "",
-  "Swatch style": "",
-  "Round": "",
-  "Square": "",
-  "Inventory status": "",
-  "Product cards": "",
-  "Mobile padding": "",
-  "Desktop padding": "",
-  "Mobile side padding": "",
-  "Number of additional images": "",
-  "Control the slide transition duration when the image carousel effect and navigation arrows are enabled": "",
-  "Navigation (light)": "",
-  "Navigation (dark)": "",
-  "Desktop side padding": "",
-  "Low stock threshold": "",
-  "A whole number between 0 and 200 is recommended for setting the low stock threshold for stock countdown.": "",
-  "Show inventory status bar": "",
-  "In stock message (light)": "",
-  "Low stock message (light)": "",
-  "Out of stock message (light)": "",
-  "In stock message (dark)": "",
-  "Low stock message (dark)": "",
-  "Out of stock message (dark)": "",
-  "In stock message": "",
-  "Low stock message": "",
-  "Personalize the message that follows the default theme text when enabling Show quantity. For example, 30 in stock - [Your message].": "",
-  "Personalize the message that follows the default theme text when enabling Show quantity. For example, 5 low in stock - [Your message].": "",
-  "Show quantity": "",
-  "Product additional options": "",
-  "Gift wrapping": "",
-  "Gift wrapping product": "",
-  "Hide product from catalogue": "",
-  "Default gift wrapping label": "",
-  "Gift wrap this product": "",
-  "Engraving option": "",
-  "Engraving product": "",
-  "Default engraving label": "",
-  "Engrave this product": "",
-  "Highlighted attributes": "",
-  "Show icons on product cards for customers to quickly comprehend products' highlighted characteristics (e.g. ingredients, allergens). Learn more in our [user guide.](https://support.omnithemes.com/blogs/theme-settings/highlighted-icons-on-product-cards)": "",
-  "Icon 1": "",
-  "Icon 2": "",
-  "Icon 3": "",
-  "Icon 4": "",
-  "Label metafield": "",
-  "Icon metafield": "",
-  "Enable price range": "",
-  "Show the minimum to maximum price range based on the differences in variants' price.": "",
-  "Price guide popup page link": "",
-  "Make a page to explain your price range. Use the placeholders from the 'Custom price format' note if you need them.": "",
-  "Custom price format": "",
-  "Customize the format in which prices are displayed using the following placeholders:": "",
-  "{price}: The product's current price.": "",
-  "{max_price}: The highest price value.": "",
-  "{middle_price}: The mid-range price value.": "",
-  "{min_price}: The lowest price value.": "",
-  "Product price": "",
-  "Adapt to button setting": "",
-  "Adapt to edge setting": "",
-  "Rounded": "",
-  "Rounded corners": "",
-  "Mixed": "",
-  "Sliced with icon": "",
-  "Primary button hover animation": "",
-  "Slide": "",
-  "Fill up": "",
-  "Mobile primary button style": "",
-  "Use button hover color": "",
-  "Use button color": "",
-  "Button colors": "",
-  "Menu item level 1 animation": "",
-  "Only works with Marker and Bling bling menu highlight style": "",
-  "Social media": "",
-  "Sharing options": "",
-  "Share on Facebook": "",
-  "Tweet on Twitter": "",
-  "Pin on Pinterest": "",
-  "Social accounts": "",
-  "Linkedin": "",
-  "https://www.linkedin.com/shopify": "",
-  "Twitter (X)": "",
-  "https://twitter.com/shopify": "",
-  "Facebook": "",
-  "https://facebook.com/shopify": "",
-  "Pinterest": "",
-  "https://pinterest.com/shopify": "",
-  "Instagram": "",
-  "http://instagram.com/shopify": "",
-  "TikTok": ""
+  "settings": {
+    "theme_mode": {
+      "name": "Theme mode",
+      "settings": {
+        "enable": "Enable theme mode",
+        "mode": {
+          "label": "Select mode",
+          "option_1": "Use device settings",
+          "option_2": "Allow manual switch"
+        },
+        "default_mode": {
+          "label": "Default mode",
+          "option_1": "Light",
+          "option_2": "Dark"
+        }
+      }
+    },
+    "schemes": {
+      "name": "Schemes"
+    },
+    "colors": {
+      "name": "Colors"
+    },
+    "colors_dark": {
+      "name": "Colors (Dark Theme)"
+    },
+    "typography": {
+      "name": "Typography",
+      "settings": {
+        "base_size": "Base size",
+        "transform": "Transform",
+        "navigation": "Navigation",
+        "letter_spacing": "Letter spacing",
+        "buttons": "Buttons"
+      }
+    },
+    "design": {
+      "name": "Design",
+      "settings": {
+        "rtl_languages": "RTL languages",
+        "rtl_languages_info": "Input the language codes to show languages in RTL layout. All codes must follow [ISO Language Code Table](https://www.w3schools.com/tags/ref_language_codes.asp) and separated using commas (Ex: ar,fa,ps)",
+        "page_width": "page_width",
+        "edges": {
+          "label": "Edges",
+          "option_1": "Square",
+          "option_2": "Rounded corners"
+        },
+        "header_popup": "Popup",
+        "minimal_popup_position": "Minimal popup position",
+        "show_popup_overlay": "Show popup overlay"
+      }
+    },
+    "products": {
+      "name": "Products",
+      "settings": {
+        "inventory_status": {
+          "header": "Inventory status",
+          "low_stock_threshold": "Low stock threshold",
+          "low_stock_threshold_info": "A whole number between 0 and 200 is recommended for setting the low stock threshold for stock countdown.",
+          "in_stock_message": "In stock message",
+          "in_stock_message_info": "Personalize the inventory status message on the product card and product information. Use {qty} in the message to show the current product stock (E.g. Only {qty} items left)",
+          "low_stock_message": "Low stock message",
+          "low_stock_message_info": "Personalize the inventory status message on the product card and product information. Use {qty} in the message to show the current product stock (E.g. Only {qty} items left)"
+        },
+        "pre_order": {
+          "header": "Pre-order",
+          "enable": {
+            "label": "Enable",
+            "info": "When product is out of stock, please make sure 'Continue selling when out of stock' is enabled in Shopify admin > Product detail page.",
+            "option_1": "No",
+            "option_2": "Yes",
+            "option_3": "When product is out of stock"
+          },
+          "button_label": "Card button label",
+          "pre_order_message": "Pre-order message"
+        },
+        "comparison": {
+          "header": "Product comparison",
+          "paragraph": "This feature enables the comparison of products, not variants. To customize the fields for comparison, modify the 'Product comparison' section in the Overlay group. Preview the outcomes on a Collection or Search page.",
+          "enable": "Enable product comparison",
+          "enable_info": "Add \"Add to Compare\" buttons to product cards (collection, search pages), and product page to compare product information and metafields in a single grid.",
+          "maximum_products": "Maximum products in compare"
+        }
+      }
+    },
+    "product_cards": {
+      "name": "Product cards",
+      "settings": {
+        "paragraph": "Applies for product cards in all pages",
+        "ratio": "Product image ratio",
+        "container_color_light": "Container color (light)",
+        "container_color_dark": "Container color (dark)",
+        "desktop_side_padding": "Desktop side padding",
+        "mobile_side_padding": "Mobile side padding",
+        "effect_on_hover": {
+          "label": "Effect on mouse hover",
+          "option_1": "None",
+          "option_2": "Reveal next image",
+          "option_3": "Show image carousel"
+        },
+        "show_inventory_status": {
+          "label": "Show inventory status",
+          "info": "Selecting \"Product sold\" does not reflect the realtime inventory drop of the product. You must create a product metafield with the exact key \"custom.product_sold\" and fill in a custom number to show as the number of product sold.",
+          "option_1": "None",
+          "option_2": "Show product sold",
+          "option_3": "Inventory status"
+        },
+        "sale_labels": {
+          "header": "Sale labels",
+          "show": "Show sale label",
+          "content": "Sale label content",
+          "paragraph_1": "You can use these codes in the content:",
+          "paragraph_2": "{sale} for discount percentage.",
+          "paragraph_3": "{sale_amount} for discount amount.",
+          "paragraph_4": "{qty} for total quantity in inventory.",
+          "paragraph_5": "{price} for product price.",
+          "paragraph_6": "<b>your content</b> for bold text.",
+          "paragraph_7": "{count_down} for count down timer to end date. (Must enable schedule)"
+        },
+        "highlight_attributes": {
+          "header": "Highlight attributes",
+          "paragraph": "Create product or variant metafields of Single line text type to show product highlighted features on product cards.",
+          "show": "Show highlight attributes",
+          "icon_metafield_1": "Icon metafield 1",
+          "icon_metafield_1_info": "E.g: custom.product_icon_1",
+          "label_metafield_1": "Label metafield 1",
+          "label_metafield_1_info": "E.g: custom.product_attribute_1",
+          "icon_metafield_2": "Icon metafield 2",
+          "icon_metafield_2_info": "E.g: custom.product_icon_2",
+          "label_metafield_2": "Label metafield 2",
+          "label_metafield_2_info": "E.g: custom.product_attribute_2",
+          "icon_metafield_3": "Icon metafield 3",
+          "icon_metafield_3_info": "E.g: custom.product_icon_3",
+          "label_metafield_3": "Label metafield 3",
+          "label_metafield_3_info": "E.g: custom.product_attribute_3"
+        },
+        "estimated_delivery_date": {
+          "header": "Estimated delivery date",
+          "show": "Show estimated delivery date",
+          "message": "Message",
+          "paragraph_1": "You can use these codes in the message:",
+          "paragraph_2": "earliest_delivery_date to show earliest delivery date.",
+          "paragraph_3": "latest_delivery_date to show latest delivery date.",
+          "paragraph_4": "delivery_duration to show the number of days left until delivery",
+          "paragraph_5": "time_to_cut_off to show the amount of time left before cut-off time",
+          "hide_when_pre_order": "Hide when Pre-order is enabled"
+        },
+        "overlay": {
+          "header": "Overlay",
+          "show_quick_add": "Show Quick add button",
+          "show_quick_add_info": "Add to cart right from product cards without opening quick view popup or going to the product page.",
+          "quick_add_mobile_position": {
+            "label": "Quick add mobile position",
+            "option_1": "On product image",
+            "option_2": "Bottom of product card"
+          }
+        }
+      }
+    },
+    "gift_wrapping": {
+      "name": "Gift wrapping",
+      "settings": {
+        "gift_wrapping_product": "Gift wrapping product",
+        "product_page_label": "Product page label"
+      }
+    },
+    "product_swatches": {
+      "name": "Product swatches",
+      "settings": {
+        "general": {
+          "info": "The settings below automatically add color swatches to the filter in collection and search page.",
+          "replace_color_with_variant_images": "Replace color options with variant images",
+          "swatch_style": {
+            "label": "Swatch style",
+            "option_1": "Round",
+            "option_2": "Square",
+            "option_3": "Natural"
+          },
+          "swatch_size": "Swatch size"
+        },
+        "product_card": {
+          "swatches_type": {
+            "label": "Swatches type",
+            "option_1": "None",
+            "option_2": "Text",
+            "option_3": "Color",
+            "option_4": "Both"
+          },
+          "text_option_name": "Text option name",
+          "text_option_name_info": "Fill in the name(s) of the option used as text swatch, phrases of different languages are separated by a semicolon (E.g. Size; Taille).",
+          "text_option_values": "Text option values",
+          "text_option_values_info": "One 'option name:value' per line.",
+          "swatches_color_shown_by_default": "Swatches color shown by default",
+          "swatches_color_shown_by_default_info": "Select 0 to show all available swatches on product cards.",
+          "swatches_text_shown_by_default": "Swatches text shown by default",
+          "swatches_text_shown_by_default_info": "Select 0 to show all available swatches on product cards."
+        },
+        "filter": {
+          "header": "Filter",
+          "info": "To filter using additional color or image values, create metaobjects and metaobject references, then change the settings below as per your preferences. [Learn about showing visual filters using metaobjects.](https://help.shopify.com/manual/online-store/search-and-discovery/filters#visual-filters)",
+          "display_text_next_to_swatches": "Display text next to swatches",
+          "visual_value_style": {
+            "label": "Visual value style",
+            "option_1": "Compact",
+            "option_2": "Large"
+          }
+        }
+      }
+    },
+    "social_media": {
+      "name": "Social media",
+      "settings": {
+        "social_accounts": {
+          "header": "Social accounts",
+          "facebook": "Facebook",
+          "facebook_info": "https://facebook.com/shopify",
+          "twitter": "Twitter (X)",
+          "twitter_info": "https://twitter.com/shopify",
+          "pinterest": "Pinterest",
+          "pinterest_info": "https://pinterest.com/shopify",
+          "instagram": "Instagram",
+          "instagram_info": "http://instagram.com/shopify",
+          "tiktok": "TikTok",
+          "tiktok_info": "https://tiktok.com/@shopify",
+          "tumblr": "Tumblr",
+          "tumblr_info": "https://shopify.tumblr.com",
+          "snapchat": "Snapchat",
+          "snapchat_info": "https://www.snapchat.com/add/shopify",
+          "youtube": "YouTube",
+          "youtube_info": "https://www.youtube.com/shopify",
+          "vimeo": "Vimeo",
+          "vimeo_info": "https://vimeo.com/shopify",
+          "linkedin": "Linkedin",
+          "linkedin_info": "https://www.linkedin.com/shopify",
+          "email": "Email address",
+          "phone": "Phone number"
+        },
+        "social_sharing": {
+          "header": "Social sharing",
+          "share_on_facebook": "Share on Facebook",
+          "share_on_x": "Share on X",
+          "share_via_email": "Share via Email",
+          "pin_on_pinterest": "Pin on Pinterest",
+          "share_via_whatsapp": "Share via Whatsapp",
+          "share_via_sms": "Share via SMS"
+        }
+      }
+    },
+    "search_bar": {
+      "name": "Search bar",
+      "settings": {
+        "enable": {
+          "label": "Enable search bar",
+          "option_1": "None",
+          "option_2": "Default",
+          "option_3": "Refined"
+        },
+        "desktop_layout": {
+          "label": "Desktop layout",
+          "option_1": "Loose",
+          "option_2": "Compact"
+        },
+        "search_results": {
+          "header": "Search results",
+          "show_products": "Show products",
+          "show_articles": "Show articles",
+          "show_collections": "Show collections",
+          "show_pages": "Show pages",
+          "desktop_max_results": "Desktop maximum results",
+          "mobile_max_results": "Mobile maximum results",
+          "show_link": "Show link to search results page"
+        },
+        "default": {
+          "header": "Default search bar",
+          "message": "Search bar default message",
+          "popular_search_terms": "Popular search terms",
+          "popular_search_terms_info": "Recommend most searched terms in your store to customers, separated using a comma (E.g. t-shirt, running shoes,...)",
+          "search_terms_title": "Search terms title",
+          "popular_products": "Popular products",
+          "popular_products_title": "Popular products title",
+          "store_discovery": "Store discovery",
+          "store_discovery_title": "Store discovery title",
+          "popular_collections": "Popular collections",
+          "popular_collections_title": "Popular collections title"
+        },
+        "speech_search": {
+          "header": "Speech search",
+          "enable": "Enable speech search",
+          "enable_info": "Speech search is only available on Chrome for desktop or Android (will not work on iPhone).",
+          "speech_pulse_color_light": "Speech pulse color (light)",
+          "speech_pulse_color_dark": "Speech pulse color (dark)"
+        },
+        "search_exclusion": {
+          "header": "Search exclusion",
+          "paragraph": "Exclude collections from in-store search and automatic recommendations.",
+          "exclude_collections": "Exclude collections"
+        }
+      }
+    },
+    "favicon": {
+      "name": "Favicon",
+      "settings": {
+        "favicon_image": "Favicon image",
+        "favicon_image_info": "Will be scaled down to 32 x 32 px"
+      }
+    },
+    "cart": {
+      "name": "Cart",
+      "settings": {
+        "cart_icon": {
+          "label": "Cart icon",
+          "option_1": "Shopping cart",
+          "option_2": "Bag"
+        },
+        "enable_cart_note": "Enable cart note",
+        "enable_view_cart_button": "Enable \"View cart\" button",
+        "enable_payment_icons": "Enable payment icons",
+        "custom_payment_icons_svg": "Custom payment icons SVG",
+        "custom_payment_icons_svg_info": "Customize your payment icons. For example, fill in this field your chosen methods: apple_pay, google_pay, tabby, tamara. [Learn more](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/add-credit-card-icons#edit-the-code-for-your-payment-icons)",
+        "continue_shopping": "Continue shopping",
+        "enable_discount_code_field": "Enable discount code field",
+        "enable_discount_code_field_info": "In case a free shipping code is applied, the discounted shipping fee will be reflected only in checkout page.",
+        "show_savings_amount": "Show savings amount",
+        "enable_terms_and_conditions": "Enable terms and conditions checkbox",
+        "terms_and_conditions_page": "Terms and conditions page",
+        "cart_custom_field": {
+          "header": "Cart custom field",
+          "enable_custom_field": "Enable Custom field",
+          "enable_custom_field_info": "\"Field label\" must be filled in to enable custom field.",
+          "mark_as_req": "Mark custom field as required",
+          "field_label": "Field label",
+          "validation_regex": "Validation regex (Advanced)",
+          "validation_regex_info": "For field validation purpose. Please avoid using it if you’re not familiar with Regex. For assistance with Regex or fixing issues that arise from it, please [contact our support](https://omnithemes.com/contact/)."
+        },
+        "cart_upsell": {
+          "header": "Cart upsell",
+          "enable_in_mini_cart": "Enable in mini cart",
+          "paragraph_1": "If enabled in mini cart and cart page, upsell recommendations can be shown following this priority (from high to low):",
+          "paragraph_2": "(1) by creating a product metafield in cart upsell and this field is not blank. [See our user guide for further details.](https://support.omnithemes.com/blogs/maximize-theme-settings/cart)",
+          "paragraph_3": "(2) by selecting a list of products manually in the settings below",
+          "paragraph_4": "(3) by using dynamic recommendations based on Shopify product recommendations. [Learn more.](https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations)",
+          "product": "Product",
+          "product_info": "If you use a product metafield to add upsell products, leave this field blank.",
+          "number_of_products": "Number of products shown",
+          "section_label": "Section label",
+          "enable_share_cart_link": "Enable \"Share cart\" link"
+        },
+        "catalog_mode": {
+          "header": "Catalog mode",
+          "hide_cart": "Hide cart"
+        }
+      }
+    },
+    "reorder": {
+      "name": "Reorder",
+      "settings": {
+        "enable": "Enable reorder",
+        "enable_info": "Show Reorder button from customer account and customer order pages"
+      }
+    },
+    "shipping_delivery": {
+      "name": "Shipping and delivery",
+      "settings": {
+        "free_shipping": {
+          "header": "Free shipping",
+          "enable": "Enable",
+          "order_amount": "Order amount for free_shipping",
+          "order_amount_info": "Enter the rules for order amount(s) to qualify for free shipping (one rule per line). Format instructions and examples are as follow:",
+          "paragraph_1": "amount (100) for orders from any country and currency without individually defined amount.",
+          "paragraph_2": "currency code:amount (USD:100) for orders from any country using USD without individually defined amount.",
+          "paragraph_3": "country code:currency code:amount (US:USD:100) for any orders from the US with the currency USD."
+        },
+        "estimated_shipping_rates": {
+          "header": "Estimated shipping rates",
+          "paragraph": "Display the estimated shipping cost at mini cart and cart page based on customer's address.",
+          "enable": "Enable",
+          "auto_calculate": "Auto-calculate shipping rates"
+        },
+        "edt": {
+          "header": "Estimated delivery time",
+          "min_day": "Minimum day(s) of delivery",
+          "min_day_info": "The minimum number of days needed to ship all orders. Use a semicolon to differentiate between shipping markets if needed (e.g. US:6;GB:3), or fill in one number to apply for all available markets. Country codes should follow [ISO 3166 standard.](https://www.iban.com/country-codes)",
+          "min_day_paragraph": "To customize for each product, create a metafield with the key 'custom.delivery_date_min' and type 'Text'. [Learn more about creating metafields](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) or [contact our support](https://omnithemes.com/contact/).",
+          "max_day": "Maximum day(s) of delivery",
+          "max_day_info": "The maximum number of days needed to ship all orders. Use a semicolon to differentiate between shipping markets if needed (e.g. US:6;GB:3), or fill in one number to apply for all available markets. Country codes should follow [ISO 3166 standard.](https://www.iban.com/country-codes)",
+          "max_day_paragraph": "To customize for each product, create a metafield with the key 'custom.delivery_date_max' and type 'Text'. [Learn more about creating metafields](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) or [contact our support](https://omnithemes.com/contact/)."
+        },
+        "cut_off_time": {
+          "header": "Cut-off time"
+        },
+        "edt_in_cart": {
+          "header": "Estimated delivery time in cart",
+          "show_in_cart": {
+            "label": "Show in cart",
+            "info": "Show estimated delivery time under each item in cart, checkout page and order details.",
+            "option_1": "None",
+            "option_2": "Show item EDT",
+            "option_3": "Show cart EDT"
+          },
+          "edt_info_label": "Estimated delivery date info",
+          "paragraph": "To customize message for each product, create a metafield with the key 'custom.delivery_date_message ' and type 'Rich text'. [Learn more about creating metafields.](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields)",
+          "message": "Message",
+          "message_paragraph_1": "You can use these codes in the message:",
+          "message_paragraph_2": "earliest_delivery_date to show earliest delivery date.",
+          "message_paragraph_3": "latest_delivery_date to show latest delivery date.",
+          "enable_tooltip": "Enable tooltip",
+          "tooltip_content": "Tooltip content"
+        },
+        "style": {
+          "date_format": {
+            "label": "Date format"
+          },
+          "content_box_type": {
+            "label": "Content box type",
+            "option_1": "Square",
+            "option_2": "Round"
+          }
+        }
+      }
+    },
+    "scroll_top": {
+      "name": "Scroll to top",
+      "settings": {
+        "custom_icon": "Custom icon (SVG code)",
+        "custom_icon_info": "For assistance with custom SVG code or fixing issues that arise from custom SVG code, please [contact our support](https://omnithemes.com/contact/).",
+        "desktop_vertical_position": "Desktop vertical position",
+        "mobile_vertical_position": "Mobile vertical position"
+      }
+    },
+    "currency_format": {
+      "name": "Currency format",
+      "settings": {
+        "stack_market_currency_values": "Stack market currency values",
+        "paragraph": "Show your market currency as a single entity in the currency selection, rather than showing specific countries individually.",
+        "currency_codes": {
+          "header": "Currency codes",
+          "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
+          "show_currency_codes": "Show currency codes"
+        }
+      }
+    },
+    "advanced": {
+      "name": "Advanced",
+      "settings": {
+        "product_reviews_app": {
+          "label": "Product reviews app",
+          "info": "Product reviews app",
+          "other": "Other"
+        },
+        "custom_code": {
+          "header": "Custom code",
+          "html_for_head_tag": "HTML for <head> tag",
+          "html_for_head_tag_info": "Used for any custom HTML code to apply site-wide. Placed at the bottom of the <head> tag on all theme pages, except for checkout page.",
+          "paragraph": "For support with handling custom code or fixing issues related to custom code, please [contact us](https://omnithemes.com/contact/)."
+        }
+      }
+    },
+    "seo": {
+      "name": "SEO",
+      "settings": {
+        "show_original_collection_url": "Show original collection URL for canonical tags",
+        "show_original_collection_url_info": "Show original URL for paginated collection pages as canonical tags.",
+        "business_info": {
+          "header": "Business information",
+          "info": "Used to show in site's structured data and on Google's SERP graph card. Learn more about [organization schema](https://developers.google.com/search/docs/appearance/structured-data/organization).",
+          "enable_organization_schema": "Enable organization schema",
+          "site_type": {
+            "label": "Site type",
+            "option_1": "An online store",
+            "option_2": "A local offline store",
+            "option_3": "A corporate",
+            "option_4": "Other"
+          },
+          "business_name": "Business name",
+          "founded_on": "Founded on",
+          "description": "Description",
+          "logo": "Logo",
+          "logo_info": "Image must be 112x112px, at minimum",
+          "address": "Address",
+          "address_info": "Fill the address by order (all fields are optional): street address, address locality, address region, postal code, address country code. E.g: Rue Improbable 99,Paris,Ile-de-France,75001,FR",
+          "other_address": "Other address",
+          "other_address_info": "Provide multiple addresses if you have locations in multiple cities, states, or countries.",
+          "phone": "Phone number",
+          "email_address": "email"
+        }
+      }
+    },
+    "breadcrumbs": {
+      "name": "Breadcrumbs",
+      "settings": {
+        "enable_microdata_schema": "Enable microdata schema",
+        "breadcrumbs_separator": "Breadcrumbs separator",
+        "show_breadcrumb_borders": "Show breadcrumb borders"
+      }
+    }
+  }
 }

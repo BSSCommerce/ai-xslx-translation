@@ -145,7 +145,95 @@ def merge_json_files_to_xlsx(language: str) -> bool:
         logger.error(f"Error merging JSON files: {str(e)}")
         return False
 
-def get_merge_status(language: str) -> Dict:
+def merge_json_files_to_final_json(language: str) -> bool:
+    """
+    Merge all JSON files in output/{language} folder to a single final.json file.
+    
+    Args:
+        language (str): Language folder name (e.g., "japanese")
+    
+    Returns:
+        bool: True if successful, False otherwise
+    """
+    try:
+        # Define paths
+        input_dir = Path("output") / language
+        output_file = input_dir / "final.json"
+        
+        # Check if input directory exists
+        if not input_dir.exists():
+            logger.error(f"Input directory not found: {input_dir}")
+            return False
+        
+        # Get all JSON files in the directory
+        json_files = list(input_dir.glob("*.json"))
+        
+        # Filter out the final.json file if it exists
+        json_files = [f for f in json_files if f.name != "final.json"]
+        
+        if not json_files:
+            logger.warning(f"No JSON files found in {input_dir}")
+            return False
+        
+        logger.info(f"Found {len(json_files)} JSON files to merge")
+        
+        # Dictionary to store all key-value pairs
+        all_data = {}
+        file_stats = {}
+        
+        # Process each JSON file
+        for json_file in json_files:
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                
+                # Count items in this file
+                item_count = len(data)
+                file_stats[json_file.name] = item_count
+                
+                # Add data to the main dictionary
+                # If there are duplicate keys, the later file will overwrite earlier ones
+                all_data.update(data)
+                
+                logger.info(f"Processed {json_file.name}: {item_count} items")
+                
+            except json.JSONDecodeError as e:
+                logger.error(f"Error parsing {json_file.name}: {str(e)}")
+                continue
+            except Exception as e:
+                logger.error(f"Error reading {json_file.name}: {str(e)}")
+                continue
+        
+        if not all_data:
+            logger.error("No valid data found in any JSON files")
+            return False
+        
+        # Create output directory if it doesn't exist
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Save to final.json
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(all_data, f, ensure_ascii=False, indent=2)
+        
+        logger.info(f"Successfully merged {len(json_files)} JSON files into {output_file}")
+        logger.info(f"Total unique keys: {len(all_data)}")
+        
+        # Print summary
+        print(f"\n📊 JSON Merge Summary for {language}:")
+        print(f"   JSON files processed: {len(json_files)}")
+        print(f"   Total unique keys: {len(all_data)}")
+        print(f"   Output file: {output_file}")
+        print(f"   File sizes:")
+        for filename, count in file_stats.items():
+            print(f"     {filename}: {count} items")
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"Error merging JSON files: {str(e)}")
+        return False
+
+def get_merge_status(language: str, is_excel: bool = True) -> Dict:
     """
     Get the status of JSON files in a language folder.
     
@@ -157,7 +245,10 @@ def get_merge_status(language: str) -> Dict:
     """
     try:
         input_dir = Path("output") / language
-        output_file = input_dir / "final.xlsx"
+        if is_excel:
+            output_file = input_dir / "final.xlsx"
+        else:
+            output_file = input_dir / "final.json"
         
         status = {
             "language": language,
@@ -166,7 +257,8 @@ def get_merge_status(language: str) -> Dict:
             "json_files": [],
             "total_items": 0,
             "final_xlsx_exists": False,
-            "can_merge": False
+            "can_merge": False,
+            "final_json_exists": False
         }
         
         if not input_dir.exists():
@@ -180,7 +272,10 @@ def get_merge_status(language: str) -> Dict:
         status["total_files"] = len(json_files)
         
         # Check if final.xlsx exists
-        status["final_xlsx_exists"] = output_file.exists()
+        if is_excel:
+            status["final_xlsx_exists"] = output_file.exists()
+        else:
+            status["final_json_exists"] = output_file.exists()
         
         # Count total items
         total_items = 0
@@ -201,7 +296,7 @@ def get_merge_status(language: str) -> Dict:
         logger.error(f"Error getting merge status: {str(e)}")
         return {"error": str(e)}
 
-def merge_all_languages() -> Dict[str, bool]:
+def merge_all_languages(is_excel: bool = True) -> Dict[str, bool]:
     """
     Merge JSON files for all available languages.
     
@@ -221,7 +316,10 @@ def merge_all_languages() -> Dict[str, bool]:
         for lang_dir in language_dirs:
             language = lang_dir.name
             logger.info(f"Processing language: {language}")
-            success = merge_json_files_to_xlsx(language)
+            if is_excel:
+                success = merge_json_files_to_xlsx(language)
+            else:
+                success = merge_json_files_to_final_json(language)
             results[language] = success
         
         return results
@@ -231,28 +329,34 @@ def merge_all_languages() -> Dict[str, bool]:
         return {}
 
 if __name__ == "__main__":
-    print("JSON to Excel Merger")
+    print("JSON Merger (Excel & JSON)")
     print("=" * 40)
     
-    # Example: Merge Japanese files
-    print("\n1. Merging Japanese JSON files...")
-    success = merge_json_files_to_xlsx("japanese")
-    print(f"Merge result: {'Success' if success else 'Failed'}")
+    # Example: Merge Japanese JSON files to final.json
+    print("\n1. Merging Japanese JSON files to final.json...")
+    json_success = merge_json_files_to_final_json("japanese")
+    print(f"JSON merge result: {'Success' if json_success else 'Failed'}")
+    
+    # Example: Merge Japanese files to Excel
+    # print("\n2. Merging Japanese JSON files to Excel...")
+    # excel_success = merge_json_files_to_xlsx("japanese")
+    # print(f"Excel merge result: {'Success' if excel_success else 'Failed'}")
     
     # Example: Get merge status
-    print("\n2. Merge status:")
+    print("\n3. Merge status:")
     status = get_merge_status("japanese")
     if 'error' not in status:
         print(f"Language: {status['language']}")
         print(f"JSON files: {status['total_files']}")
         print(f"Total items: {status['total_items']}")
         print(f"Final XLSX exists: {status['final_xlsx_exists']}")
+        print(f"Final JSON exists: {status['final_json_exists']}")
         print(f"Can merge: {status['can_merge']}")
     else:
         print(f"Error: {status['error']}")
     
     # Example: Merge all languages
-    print("\n3. Merging all languages...")
+    print("\n4. Merging all languages...")
     all_results = merge_all_languages()
     for lang, result in all_results.items():
         print(f"  {lang}: {'✓' if result else '✗'}")

@@ -13,9 +13,9 @@ from typing import Dict, List, Optional
 from dotenv import load_dotenv
 
 # Import our modules
-from json_converter import convert_excel_to_json_parts
+from json_converter import convert_excel_to_json_parts, convert_json_to_parts
 from translate import translate_single_json_file, translate_all_json_files, get_translation_status
-from merge import merge_json_files_to_xlsx, get_merge_status
+from merge import merge_json_files_to_final_json, merge_json_files_to_xlsx, get_merge_status
 from text_to_json import process_translation_file
 
 # Load environment variables
@@ -35,9 +35,10 @@ logger = logging.getLogger(__name__)
 class TranslationPipeline:
     """Main translation pipeline that orchestrates all steps."""
     
-    def __init__(self, language: str = "japanese", items_per_part: int = 500):
+    def __init__(self, language: str = "japanese", input_type: str = "json", items_per_part: int = 500):
         self.language = language
         self.items_per_part = items_per_part
+        self.input_type = input_type
         self.api_key = os.getenv("GEMINI_API_KEY")
         
         if not self.api_key:
@@ -84,12 +85,16 @@ class TranslationPipeline:
             
             # Step 3: Merge to final Excel
             logger.info("📊 Step 3: Merging to final Excel...")
-            merge_success = merge_json_files_to_xlsx(self.language)
+            if self.input_type == "excel":
+                merge_success = merge_json_files_to_xlsx(self.language)
+            else:
+                merge_success = merge_json_files_to_final_json(self.language)
+
             if not merge_success:
                 results["errors"].append("Failed to merge JSON files")
                 return results
             results["steps"]["merging"] = {"success": True}
-            logger.info("✅ Step 3 complete: Final Excel created")
+            logger.info("✅ Step 3 complete: Final file created")
             
             results["success"] = True
             logger.info(f"🎉 Full pipeline completed successfully for {self.language}")
@@ -128,14 +133,17 @@ class TranslationPipeline:
             # Step 1: Convert Excel to JSON parts
             if convert_to_json:
                 logger.info("📋 Step 1: Converting Excel to JSON parts...")
-                json_files = convert_excel_to_json_parts(self.items_per_part, self.language)
+                if self.input_type == "excel":
+                    json_files = convert_excel_to_json_parts(self.items_per_part, self.language)
+                else:
+                    json_files = convert_json_to_parts(self.items_per_part, self.language)
                 if not json_files:
-                    results["errors"].append("Failed to convert Excel to JSON parts")
+                    results["errors"].append("Failed to convert Excel or JSON to JSON parts")
                     return results
                 results["steps"]["json_conversion"] = {"success": True, "files": json_files}
                 logger.info(f"✅ Step 1 complete: {len(json_files)} JSON parts created")
             else:
-                logger.info("📋 Step 1: Skipping Excel to JSON parts conversion")
+                logger.info("📋 Step 1: Skipping Excel or JSON to JSON parts conversion")
 
             # Check if JSON parts exist
             parts_dir = Path("parts") / self.language
@@ -159,14 +167,17 @@ class TranslationPipeline:
             logger.info(f"✅ Step 2 complete: {file_name} translated")
 
 
-            # Step 3: Merge to final Excel
-            logger.info("📊 Step 3: Merging to final Excel...")
-            merge_success = merge_json_files_to_xlsx(self.language)
+            # Step 3: Merge to final file
+            logger.info("📊 Step 3: Merging to final file...")
+            if self.input_type == "excel":
+                merge_success = merge_json_files_to_xlsx(self.language)
+            else:
+                merge_success = merge_json_files_to_final_json(self.language)
             if not merge_success:
                 results["errors"].append("Failed to merge JSON files")
                 return results
             results["steps"]["merging"] = {"success": True}
-            logger.info("✅ Step 3 complete: Final Excel created")
+            logger.info("✅ Step 3 complete: Final file created")
 
             results["success"] = True
             logger.info(f"🎉 Single file pipeline completed for {file_name}")
@@ -184,6 +195,7 @@ class TranslationPipeline:
             status = {
                 "language": self.language,
                 "excel_source": {},
+                "json_source": {},
                 "json_parts": {},
                 "translation_status": {},
                 "merge_status": {},
@@ -191,12 +203,23 @@ class TranslationPipeline:
             }
             
             # Check Excel source
-            excel_file = Path("source/Output_Final.xlsx")
-            status["excel_source"] = {
-                "exists": excel_file.exists(),
-                "path": str(excel_file)
-            }
-            
+            if self.input_type == "excel":
+                excel_file = Path("source/Output_Final.xlsx")
+            else:
+                json_file = Path("source/en.default.schema.json")
+
+            if self.input_type == "excel":
+                status["excel_source"] = {
+                    "exists": excel_file.exists(),
+                    "path": str(excel_file)
+                }
+
+            else:
+                status["json_source"] = {
+                    "exists": json_file.exists(),
+                    "path": str(json_file)
+                }
+
             # Check JSON parts
             parts_dir = Path("parts") / self.language
             if parts_dir.exists():
@@ -308,7 +331,9 @@ def main():
     parser.add_argument("--convert-to-json", "-c", default=False,
                        help="Convert Excel to JSON parts")
     parser.add_argument("--full", action="store_true",
-                       help="Run full pipeline (Excel → JSON → Translate → Merge)")
+                       help="Run full pipeline (Excel or JSON → JSON → Translate → Merge)")
+    parser.add_argument("--input-type", "-t", default="json",
+                       help="Input type (excel or json)")
     
     args = parser.parse_args()
     
@@ -320,7 +345,7 @@ def main():
             sys.exit(1)
         
         # Initialize pipeline
-        pipeline = TranslationPipeline(args.language, args.items_per_part)
+        pipeline = TranslationPipeline(args.language, args.items_per_part, args.input_type)
         
         # Show status only
         if args.status:

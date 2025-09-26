@@ -37,9 +37,14 @@ class TranslationAgent:
             prompt = f"""
             Input text use JSON format. for example:
             {{
-                "text to translate": ""
+                "base_size": "Base size",
+                "transform": "Transform",
+                "navigation": "Navigation",
+                "letter_spacing": "Letter spacing",
+                "buttons": "Buttons"
             }}
-            replace "" with the translated text.
+            
+            Keep original key and replace value with the translated text.
 
             Translate the following text to {target_language}. 
             Maintain the original meaning and context. 
