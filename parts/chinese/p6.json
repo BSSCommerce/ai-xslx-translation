@@ -1,0 +1,456 @@
+{
+  "product_components": {
+    "name": "Product components",
+    "settings": {
+      "button_link_info": "Auto-link to the chosen product if another link is not added.",
+      "product": {
+        "header": "Product",
+        "product_info": "Alternate the default product image with the \"Custom image\" setting.",
+        "show_product_description": "Show product description",
+        "custom_image_desktop": "Desktop custom image",
+        "custom_image_mobile": "Mobile custom image"
+      },
+      "section_layout": {
+        "image_position": "Image position"
+      }
+    },
+    "blocks": {
+      "product_component": {
+        "name": "Product component",
+        "settings": {
+          "hotspot": {
+            "name": "Hotspot",
+            "hotspot_icon": "Hotspot icon",
+            "horizontal_desktop_position": "Horizontal desktop position",
+            "vertical_desktop_position": "Vertical desktop position",
+            "horizontal_mobile_position": "Horizontal mobile position",
+            "vertical_mobile_position": "Vertical mobile position"
+          },
+          "media": {
+            "image_info": "Recommended image ratio is square.",
+            "icon_info": "This overrides image",
+            "media_style": "Media style"
+          }
+        }
+      }
+    }
+  },
+  "product_details": {
+    "name": "Product details",
+    "blocks": {
+      "highlight_feature": {
+        "name": "Highlight feature",
+        "settings": {
+          "desktop_text_alignment": "Desktop text alignment",
+          "mobile_text_alignment": "Mobile text alignment"
+        }
+      },
+      "rich_text": {
+        "name": "Rich text",
+        "page": "Content from page",
+        "show_border": "Show border"
+      },
+      "specifications": {
+        "name": "Specifications",
+        "settings": {
+          "table_detail": "Table detail",
+          "table_detail_info": "Use a colon to separate two columns in a table. Use a hyphen to indent rows. Add a new row with line breaks (using SHIFT + ENTER). [Learn more](https://support.omnithemes.com/blogs/maximize-sections-blocks/tabs#:~:text=%F0%9F%A4%94%20How%20to%20add%20a%20tab%20that%20shows%20content%20in%20table%20format%3F)",
+          "row_shown_by_default": "Rows shown by default"
+        }
+      }
+    }
+  },
+  "product_labels_badges": {
+    "name": "Product labels and badges",
+    "settings": {
+      "paragraph_1": "Use this section to add labels and badges to your products and product cards. [See tutorials](https://support.omnithemes.com/blogs/overlay-group-1/user-guide-product-labels-badges)",
+      "paragraph_2": "In theme editor, click 'Save' to review the changes.",
+      "enable": "Enable product labels and badges"
+    },
+    "blocks": {
+      "sale_label": {
+        "name": "Sale label",
+        "settings": {
+          "paragraph": "Sale label automatically displays on all discounted products.",
+          "show_on_product_card": "Show on product card",
+          "show_on_product_page": "Show on product page",
+          "show_on_product_page_info": "To show labels and badges in Product information and Quick view, please add the 'Labels and badges' block in those sections, or check [this guide](https://support.omnithemes.com/blogs/maximize-overlay-group/product-label).",
+          "display": {
+            "header": "Display",
+            "label_style": {
+              "label": "Label style",
+              "option_1": "Default",
+              "option_2": "Rounded corner",
+              "option_3": "Top scrolling",
+              "option_4": "Bottom scrolling"
+            },
+            "image_info": "Use image instead.",
+            "desktop_label_size": "Desktop label size",
+            "mobile_label_size": "Mobile label size",
+            "label_opacity": "Label opacity",
+            "label_position": "Label position",
+            "label_position_info": "Does not apply with scrolling label styles.",
+            "colors": {
+              "label_color_light": "Label color (light)",
+              "text_color_light": "Text color (light)",
+              "border_color_light": "Border color (light)",
+              "label_color_dark": "Label color (dark)",
+              "text_color_dark": "Text color (dark)",
+              "border_color_dark": "Border color (dark)"
+            }
+          }
+        }
+      },
+      "sold_out_label": {
+        "name": "Sold out label",
+        "settings": {
+          "paragraph": "Sold out label automatically displays on all unavailable products."
+        }
+      },
+      "text_label": {
+        "name": "Text label",
+        "settings": {
+          "content_info": "Display each label's content in a single row to create a continuous label on product cards.",
+          "schedule": {
+            "header": "Schedule",
+            "paragraph": "Set up to show labels on start time and hide on end time.",
+            "schedule_enabled": "Enable schedule",
+            "paragraph_start": "Set up exact time to start showing labels and badges.",
+            "paragraph_end": "Set up exact time to stop showing labels and badges."
+          }
+        }
+      },
+      "image_label": {
+        "name": "Image label"
+      },
+      "pre_order_label": {
+        "name": "Pre-order label"
+      },
+      "new_product_label": {
+        "name": "New product label",
+        "settings": {
+          "day_start": {
+            "label": "Show label within the number of days since",
+            "option_1": "Product creation date",
+            "option_2": "Product activation date"
+          },
+          "day_end": "Number of days"
+        }
+      }
+    }
+  },
+  "product_picker": {
+    "name": "Product picker",
+    "settings": {
+      "navigation_panel": {
+        "header": "Navigation panel",
+        "collection_select_placeholder": "Collection select placeholder",
+        "collection_select_placeholder_info": "Placeholder text for the first dropdown selection.",
+        "price_filter_style": {
+          "label": "Price filter style",
+          "option_1": "Range slider",
+          "option_2": "Input",
+          "option_3": "Range slider and input"
+        }
+      }
+    },
+    "blocks": {
+      "collection": {
+        "settings": {
+          "alternative_collection_name": "Alternative collection name",
+          "filter_1": {
+            "header": "Filter 1",
+            "filter_name": "Filter name",
+            "filter_name_info": "Fill in an exact label of a filter created in your filter app (e.g. Search and Discovery). If multiple languages are available, use translation apps to localize the filter label and fill them here, separated by a semicolon (e.g. Price;Preis;価格)",
+            "dropdown_option_format": {
+              "label": "Dropdown option format",
+              "option_1": "Text only",
+              "option_2": "Text with small image",
+              "option_3": "Text with large image"
+            }
+          },
+          "filter_2": {
+            "header": "Filter 2"
+          },
+          "filter_3": {
+            "header": "Filter 3"
+          }
+        }
+      }
+    }
+  },
+  "product_recommendations": {
+    "name": "Product recommendations",
+    "settings": {
+      "paragraph": "Dynamic recommendations use order and product information to change and improve over time. [Learn more](https://help.shopify.com/themes/development/recommended-products)"
+    }
+  },
+  "product_specifications": {
+    "name": "Product specifications",
+    "blocks": {
+      "specification": {
+        "name": "Specification",
+        "settings": {
+          "specification_detail": {
+            "header": "Specification detail",
+            "list_of_spec": "List of specifications",
+            "list_of_spec_info": "List the labels and product metafield keys, one per line, in the following format of label:metafield_key (e.g. Material:custom.material). Modify the 'metafield_key' part to suit your preference."
+          }
+        }
+      }
+    }
+  },
+  "promotion_grid": {
+    "name": "Promotion grid",
+    "blocks": {
+      "promotion": {
+        "name": "Promotion",
+        "settings": {
+          "overlay_content": {
+            "header": "Overlay content",
+            "enable_content_overlay": "Enable content overlay",
+            "content_position": "Overlay content position"
+          },
+          "layout": {
+            "number_of_columns_info": "Only applies when a carousel is not used on mobile.",
+            "media_position": "Media position",
+            "media_position_info": "Does not apply for overlay content."
+          },
+          "sale_label": {
+            "header": "Sale label",
+            "line_1": "Line 1",
+            "line_1_size": "Line 1 font size",
+            "line_2": "Line 2",
+            "line_2_size": "Line 2 font size",
+            "line_3": "Line 3",
+            "line_3_size": "Line 3 font size",
+            "position": "Sale label position",
+            "style": {
+              "label": "Sale label style",
+              "option_1": "Square",
+              "option_2": "Circle",
+              "option_3": "Flag",
+              "option_4": "Angle"
+            },
+            "colors": {
+              "label_background": "Label background",
+              "label_text": "Label text"
+            }
+          }
+        }
+      },
+      "product": {
+        "settings": {
+          "desktop_size": "Desktop size"
+        }
+      }
+    }
+  },
+  "promotion_spotlight": {
+    "name": "Promotion spotlight",
+    "settings": {
+      "min_bg_img_height": "Minimum background image height",
+      "column_spacing": "Column spacing",
+      "row_spacing": "Row spacing",
+      "row_spacing_info": "Applies to vertical layout (background image 400-450px tall)."
+    },
+    "blocks": {
+      "countdown_timer": {
+        "bg_overlay_opacity": "Background overlay opacity"
+      }
+    }
+  },
+  "quick_link": {
+    "name": "Quick links",
+    "settings": {
+      "desktop_layout": {
+        "link_spacing": "Link spacing",
+        "show_lines": "Show lines",
+        "show_lines_info": "Only applies on desktop screens."
+      }
+    },
+    "blocks": {
+      "link_item": {
+        "name": "Link item",
+        "settings": {
+          "title": "Link title",
+          "url": "URL"
+        }
+      }
+    }
+  },
+  "quick_view": {
+    "name": "Quick view",
+    "settings": {
+      "preview_product": "Preview product",
+      "media": {
+        "info": "Learn more about [media types](https://help.shopify.com/manual/products/product-media)"
+      },
+      "product_card": {
+        "show_quick_view_info": "View product details in a popup without leaving the current page.",
+        "quick_view_button_label": "Quick view button label",
+        "quick_view_button_label_info": "\"Quick view\" will be used as default"
+      }
+    },
+    "blocks": {
+      "button_view_product": {
+        "name": "View product details"
+      }
+    }
+  },
+  "recently_viewed": {
+    "name": "Recently viewed products",
+    "settings": {
+      "paragraph": "Section is hidden if there's no product viewed yet.",
+      "enable_clear_history": "Enable clear history"
+    }
+  },
+  "related_collections": {
+    "name": "Related collections",
+    "settings": {
+      "paragraph": "Create a collection metafield with the key \"related_collections\" and type Collection (List of collections). Go to each collection page in admin and select the collections in the metafield to show in this section. If no metafield data is found, the theme detects the related collections automatically based on the collections of the product in current collection.",
+      "section_layout": {
+        "max_collections": "Maximum collections to show"
+      }
+    }
+  },
+  "rich_text": {
+    "name": "Rich text",
+    "blocks": {
+      "caption": {
+        "settings": {
+          "text_style": {
+            "label": "Text style",
+            "option_1": "Subtitle",
+            "option_2": "Uppercase"
+          }
+        }
+      },
+      "buttons": {
+        "settings": {
+          "button_label_info": "Leave the label blank to hide the button."
+        }
+      },
+      "media": {
+        "settings": {
+          "media_size": "Media size",
+          "media_size_info": "Applies to desktop only."
+        }
+      }
+    }
+  },
+  "scrolling_promotion": {
+    "name": "Scrolling promotion",
+    "settings": {
+      "show_section_borders": "Show section borders",
+      "scrolling": {
+        "header": "Scrolling",
+        "direction": {
+          "label": "Direction",
+          "option_1": "Left to right",
+          "option_2": "Right to left"
+        }
+      }
+    },
+    "blocks": {
+      "icon": {
+        "settings": {
+          "icon_height": "Icon height",
+          "left_spacing": "Left spacing",
+          "right_spacing": "Right spacing"
+        }
+      }
+    }
+  },
+  "segmented_banner": {
+    "name": "Segmented banner",
+    "settings": {
+      "desktop_layout": {
+        "hero_desktop_height": "Hero desktop height"
+      },
+      "mobile_layout": {
+        "hero_mobile_height": "Hero mobile height"
+      },
+      "colors": {
+        "transition_light": "Transition (light)",
+        "transition_dark": "Transition (dark)"
+      }
+    },
+    "blocks": {
+      "segment": {
+        "name": "Segment",
+        "settings": {
+          "banner_content": {
+            "header": "Banner content"
+          }
+        }
+      }
+    }
+  },
+  "sidebar": {
+    "name": "Sidebar",
+    "settings": {
+      "paragraph": "Use the Sidebar to display Table of Contents, promotional banners, highlight messages, feature products, and showcase relevant blog tags to enhance user engagement or facilitate other purposes.",
+      "sidebar_position": "Sidebar position",
+      "enable_sticky_side_bar": "Enable sticky sidebar"
+    },
+    "blocks": {
+      "highlight_text": {
+        "name": "Highlight text"
+      },
+      "product": {
+        "name": "Promotional product"
+      },
+      "promotion_banner": {
+        "name": "Promotion banner",
+        "overlay_opacity_info": "Only applies to image"
+      },
+      "social_sharing": {
+        "name": "Social sharing",
+        "settings": {
+          "paragraph": "No customizable settings available."
+        }
+      },
+      "table_of_contents": {
+        "name": "Table of Contents",
+        "settings": {
+          "list_style": {
+            "label": "List style",
+            "option_1": "Number",
+            "option_2": "Bullet point"
+          }
+        }
+      },
+      "blog_tags": {
+        "name": "Blog tags"
+      }
+    }
+  },
+  "store_locator": {
+    "name": "Store locator",
+    "settings": {
+      "pickup_button_label": "Pickup button label"
+    },
+    "blocks": {
+      "store_location": {
+        "name": "Store location",
+        "settings": {
+          "image": "Store image",
+          "image_ratio_info": "Applies specifically to images displayed within tabs.",
+          "image_ratio_rectangle_option": "Rectangle (3:2)",
+          "location_name": "Location name",
+          "location_name_info": "The store name needs to match the name of your store defined in your [location settings](/admin/settings/locations).",
+          "location_address": "Location address",
+          "location_address_info": "Google Map will find the exact location.",
+          "pickup_fee": "Pickup fee",
+          "ready_time": "Ready time",
+          "location_details": "Location details",
+          "button": {
+            "navigation_button_label": "Navigation button label",
+            "navigation_button_label_info": "The button redirects you to Google Maps for the specified address."
+          }
+        }
+      }
+    }
+  }
+}

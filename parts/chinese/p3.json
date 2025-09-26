@@ -1,0 +1,395 @@
+{
+  "apps": {
+    "name": "Apps",
+    "settings": {
+      "include_margins": {
+        "label": "Make section margins the same as theme"
+      }
+    },
+    "presets": "Apps"
+  },
+  "collection_description": {
+    "name": "Collection description",
+    "show_heading": "Show heading"
+  },
+  "collection_list": {
+    "name": "Collection list",
+    "settings": {
+      "paragraph": "By default, the section displays all collections. Add blocks to feature specific collections in place of the default ones.",
+      "card": {
+        "header": "Collection card",
+        "collection_metafield": "Auto-fill collection images with metafield",
+        "image_style": {
+          "label": "Image style",
+          "option_1": "Square (1:1)",
+          "option_2": "Rectangle (2:3)",
+          "option_3": "Landscape (4:3)",
+          "option_4": "Standard (3:4)",
+          "option_5": "Round",
+          "option_6": "Natural"
+        },
+        "desktop_title_size": "Desktop title size",
+        "mobile_title_size": "Mobile title size",
+        "show_item_count": "Show item count"
+      }
+    },
+    "blocks": {
+      "collection": {
+        "name": "Collection",
+        "collection": "Collection"
+      },
+      "promotion": {
+        "name": "Promotion block"
+      }
+    }
+  },
+  "contact_form": {
+    "name": "Contact Form",
+    "settings": {
+      "success_message": "Success message",
+      "show_additional_content": {
+        "label": "Show additional content",
+        "option_1": "Contact information",
+        "option_2": "Image",
+        "option_3": "Both",
+        "option_4": "None"
+      },
+      "form_alignment": "Form alignment",
+      "contact_info": {
+        "header": "Contact information",
+        "contact_heading": "Contact heading",
+        "information": "Information"
+      }
+    },
+    "blocks": {
+      "name": {
+        "name": "Name"
+      },
+      "email": {
+        "settings": {
+          "email_info": "Email is always required to submit the form."
+        }
+      },
+      "message": {
+        "name": "Message"
+      },
+      "form": {
+        "name": "Form item",
+        "form_input_type": "Form input type",
+        "options": "Options",
+        "options_info": "Input values of dropdowns, radio buttons and checkboxes. Options are separated by a semicolon (Ex: Client;Partner;Retailer;Wholesaler)"
+      }
+    }
+  },
+  "custom_liquid": {
+    "name": "Custom liquid",
+    "settings": {
+      "custom_liquid": "Custom Liquid",
+      "custom_liquid_info": "Add app snippets or other Liquid code to create advanced customizations."
+    }
+  },
+  "drawer_menu": {
+    "name": "Drawer menu",
+    "settings": {
+      "drawer_menu": "Drawer menu",
+      "drawer_menu_info": "Add blocks named \"Drawer menu\" under this section to add promotion, images for each menu item.",
+      "desktop_menu_selection": {
+        "label": "Desktop menu selection",
+        "option_1": "On hover",
+        "option_2": "On click"
+      },
+      "desktop_drawer_menu_title": "Desktop drawer menu title",
+      "mobile_drawer_menu_title": "Mobile drawer menu title",
+      "drawer_menu_style": {
+        "label": "Drawer menu style",
+        "option_1": "Primary",
+        "option_2": "Secondary"
+      },
+      "spacing_desktop": "Desktop block spacing",
+      "collection_images": {
+        "header": "Collection images",
+        "show_menu_image_options": {
+          "option_1": "None",
+          "option_2": "Featured image",
+          "option_3": "First product image (for collections)",
+          "option_4": "Collection image metafield"
+        },
+        "show_1st_menu_images": "Show 1st-level menu images",
+        "show_second_lv_collection_img": {
+          "label": "Show second-level collection image",
+          "option_1": "None",
+          "option_2": "Next to menu",
+          "option_3": "Above menu"
+        },
+        "show_2nd_level_menu_image": "Show 2nd-level menu images",
+        "collection_image_metafield": "Collection image metafield",
+        "collection_image_metafield_info": "Use metafield for image to have better ratio and quality. Applies to 2nd level menu only.",
+        "image_ratio": "2nd-level image ratio",
+        "enable_drawer_menu_on_mobile": "Enable drawer menu on mobile"
+      }
+    },
+    "blocks": {
+      "drawer_menu": {
+        "settings": {
+          "menu_item": "Menu_item",
+          "menu_item_info": "Fill in the name of the 1st-level item you want to turn into mega menu (e.g. Shop All)",
+          "view_all_title": "\"View all\" link title",
+          "promotions": {
+            "header": "Promotions",
+            "position_promotion": "Position on large screen",
+            "layout_promotion": "Layout on large screens"
+          },
+          "promotion_1": {
+            "header": "Promotion 1"
+          },
+          "promotion_2": {
+            "header": "Promotion 2"
+          }
+        }
+      }
+    }
+  },
+  "email_signup_banner": {
+    "name": "Email signup banner",
+    "settings": {
+      "paragraph": "Each email subscription creates a customer account.",
+      "image_overlay_opacity_info": "Only applies overlay on desktop.",
+      "show_container_on_desktop": "Show container on desktop",
+      "show_background_image_mobile": "Show background image on mobile",
+      "heading_color": "Heading color",
+      "text_color": "Text color",
+      "container_color": "Container color"
+    },
+    "blocks": {
+      "text": {
+        "description": "Description"
+      },
+      "email_form": {
+        "name": "Email form"
+      }
+    }
+  },
+  "event_calendar": {
+    "name": "Event calendar",
+    "settings": {
+      "description": "Description",
+      "time_format": {
+        "label": "Time format",
+        "option_1": "12-hour",
+        "option_2": "24-hour"
+      },
+      "colors": {
+        "date_light": "Date (light)",
+        "date_bg_light": "Date background (light)",
+        "date_dark": "Date (dark)",
+        "date_bg_dark": "Date background (dark)"
+      }
+    },
+    "blocks": {
+      "event": {
+        "name": "Event",
+        "settings": {
+          "event_name": "Event name",
+          "event_name_size": "Event name size",
+          "summary": "Summary",
+          "detailed_description": "Detailed description",
+          "location": "Location",
+          "add_to_calendar_button": "\"Add to calendar\" button label",
+          "event_tickets": {
+            "header": "Event tickets",
+            "offer_tickets": "Offer tickets for this event",
+            "ticket_link": "Ticket page link",
+            "ticket_link_info": "Add a ticket page to sell tickets to attendees. Create a [digital product](https://help.shopify.com/manual/products/digital-service-product/selling-services-or-digital-products) to provide more information about the event, and optionally hide it from product listings.",
+            "ticket_button_label": "Ticket button label"
+          },
+          "start_date": {
+            "header": "Start date"
+          },
+          "end_date": {
+            "header": "End date",
+            "has_end_date": "This event has an end date"
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "name": "FAQ",
+    "settings": {
+      "collapsible": "Show in collapsible tab",
+      "view_all_label": "\"View all\" button label",
+      "view_all_position": "\"View all\" button position",
+      "view_all_link": "\"View all\" button link",
+      "view_all_link_info": "Choose an FAQ page.",
+      "show_additional_content": {
+        "label": "Show additional content",
+        "option_1": "None",
+        "option_2": "Image",
+        "option_3": "Additional information",
+        "option_4": "Both"
+      },
+      "additional_information": "Additional information",
+      "image_info": "For recommended image sizes, check our user guide.",
+      "desktop_layout": {
+        "additional_content_position": "Additional content position"
+      },
+      "mobile_layout": {
+        "additional_content_position": {
+          "label": "Additional content position",
+          "option_1": "Image first",
+          "option_2": "Image second"
+        }
+      }
+    },
+    "blocks": {
+      "frequently_asked_question": {
+        "name": "Frequently asked question",
+        "settings": {
+          "question": "Question",
+          "answer": "Answer"
+        }
+      }
+    }
+  },
+  "featured_blog": {
+    "name": "Blog posts",
+    "settings": {
+      "blog": "Blog",
+      "blog_post": "Blog posts",
+      "show_more": "Show \"Show more\" button",
+      "show_more_info": "\"Show more\" button will be disabled when Carousel is enabled.",
+      "view_all_position": "\"View all\" button position",
+      "blog_items": {
+        "header": "Blog items",
+        "show_featured_image": "Show featured image",
+        "item_secondary_background": "Items secondary background"
+      },
+      "section_layout": {
+        "image_mobile_position": {
+          "option_1": "Image top",
+          "option_2": "Image aside"
+        }
+      }
+    }
+  },
+  "featured_collections": {
+    "name": "Featured collections",
+    "settings": {
+      "desktop_heading_alignment": "Desktop heading alignment",
+      "view_all_label": "\"View all\" button label",
+      "featured_collection": {
+        "header": "Featured collection",
+        "title_style": "Title style"
+      },
+      "background_image": {
+        "header": "Background image",
+        "enable_gradient_background": "Enable gradient background image"
+      },
+      "countdown": {
+        "paragraph": "Add a countdown timer to instill a sense of urgency among your customers and encourage them to buy a product.",
+        "enable_countdown": "Enable Countdown timer",
+        "show_border": "Show border around timer"
+      },
+      "desktop_layout": {
+        "number_rows_desktop_info": "This applies when carousel is disabled."
+      }
+    }
+  },
+  "flow": {
+    "name": "Flow cards",
+    "settings": {
+      "open_first_tab": "Open the first tab by default",
+      "card_section_style": {
+        "label": "Card section style",
+        "option_1": "On hover",
+        "option_2": "On click"
+      },
+      "card_content_alignment_desktop": "Card content alignment desktop",
+      "card_content_alignment_mobile": "Card content alignment mobile"
+    }
+  },
+  "footer": {
+    "name": "Footer",
+    "settings": {
+      "hide_footer_on_page": "Hide footer on page URLs",
+      "hide_footer_on_page_info": "Fill the page URL in relative path format without the full domain (e.g. /pages/landing page). One URL per row."
+    },
+    "blocks": {
+      "menu": {
+        "settings": {
+          "open_by_default": "Open by default on mobile",
+          "number_of_columns_wide": "Number of columns wide on desktop",
+          "menu": "Menu",
+          "menu_info": "Displays only top-level menu items.",
+          "menu_desktop_layout": "Menu desktop layout"
+        }
+      },
+      "custom_text": {
+        "name": "Custom text",
+        "settings": {
+          "subtext": "Subtext",
+          "show_social_icons": "Show social icons",
+          "image_light": "Image (Light)",
+          "image_dark": "Image (Dark)",
+          "image_width": "Image width"
+        }
+      },
+      "image": {
+        "rounded_corner_image": "Enable rounded corner images",
+        "image_alignment": "Image alignment on large screen"
+      },
+      "contact_info": {
+        "name": "Contact info",
+        "settings": {
+          "line_1": "Line 1",
+          "line_2": "Line 2",
+          "line_3": "Line 3"
+        }
+      },
+      "certifications": {
+        "name": "Certifications",
+        "settings": {
+          "certifications": "Certifications",
+          "certifications_info": "Locate the file in Admin > Content > Files and find their names. Fill in the names of image files to show as trust badges here, one file name per row. E.g. 'certificate-image.jpg'."
+        }
+      },
+      "newsletter": {
+        "name": "Newsletter"
+      },
+      "subfooter": {
+        "name": "Subfooter",
+        "settings": {
+          "show_block_divider": "Show block divider on desktop",
+          "show_payment_icons": "Show payment icons",
+          "custom_payment_icon": "Custom payment icons",
+          "custom_payment_icon_info": "Add and rearrange payment icons manually by adding [payment names](https://shopify.dev/docs/api/checkout-ui-extensions/unstable/components/media/paymenticon), separated by commas (e.g. visa,mastercard,klarna).",
+          "show_copyright": "Show copyright text",
+          "show_powered_by": "Show \"Powered by Shopify\" text",
+          "custom_copyright_text": "Custom copyright text",
+          "country_region_selector": {
+            "header": "Country/Region selector",
+            "info": "To add a country/region, go to your [payment settings](/admin/settings/payments)",
+            "enable_country_selector": "Enable country/region selector"
+          },
+          "language_selector": {
+            "header": "Language selector",
+            "info": "To add a language, go to your [language settings](/admin/settings/languages)",
+            "enable_language_selector": "Enable language selector"
+          },
+          "follow_on_shop": {
+            "header": "Follow on Shop",
+            "info": "Display follow button for your storefront on the Shop app. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)",
+            "enable_follow_on_shop": "Enable Follow on Shop"
+          }
+        }
+      },
+      "enlarged_store_name": {
+        "name": "Enlarged store name",
+        "settings": {
+          "logo_font_size": "Store name font size",
+          "logo_width": "Logo width"
+        }
+      }
+    }
+  }
+}

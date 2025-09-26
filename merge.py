@@ -356,7 +356,7 @@ if __name__ == "__main__":
         print(f"Error: {status['error']}")
     
     # Example: Merge all languages
-    print("\n4. Merging all languages...")
-    all_results = merge_all_languages()
-    for lang, result in all_results.items():
-        print(f"  {lang}: {'✓' if result else '✗'}")
+    # print("\n4. Merging all languages...")
+    # all_results = merge_all_languages()
+    # for lang, result in all_results.items():
+    #     print(f"  {lang}: {'✓' if result else '✗'}")

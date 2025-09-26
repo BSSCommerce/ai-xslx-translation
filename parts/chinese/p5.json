@@ -1,0 +1,492 @@
+{
+  "main_product": {
+    "name": "Product information",
+    "settings": {
+      "enable_sticky_content": "Enable sticky content on desktop",
+      "make_content_center": "Make primary content center",
+      "media": {
+        "navigation_buttons_style": {
+          "label": "Show navigation buttons",
+          "large_screens_only": "Large screens only",
+          "mobile_only": "Mobile only",
+          "always": "Always"
+        },
+        "desktop_media_width": {
+          "label": "Desktop media width",
+          "default": "Default"
+        },
+        "show_media_with_variant_selected": "Only show media associated with the selected variant",
+        "option_to_classify_variant_media": "Option to classify variant media",
+        "paragraph": "Fill in the option name used to classify each variant's media. Use semicolons to separate the option labels in different languages (e.g. Color;Colour;Couleur)",
+        "zoom_effect": {
+          "label": "Zoom effect",
+          "magnifier": "Magnifier",
+          "enlarge": "Enlarge"
+        }
+      },
+      "sticky_atc": {
+        "header": "Sticky add-to-cart",
+        "sticky_add_to_cart_style": {
+          "label": "Style",
+          "bottom_bar": "Bottom bar"
+        },
+        "show_qty": "Show quantity selector"
+      }
+    },
+    "blocks": {
+      "product_title": {
+        "name": "Product title",
+        "settings": {
+          "product_title_tag": "Product title tag"
+        }
+      },
+      "price": {
+        "name": "Price",
+        "settings": {
+          "show_tax_and_shipping": "Show tax status and shipping policy"
+        }
+      },
+      "vendor": {
+        "name": "Vendor name",
+        "settings": {
+          "paragraph_1": "Show more details about the product's vendor following this priority (from high to low):",
+          "paragraph_2": "(1) by linking the vendor name to the collection of corresponding vendor. [Learn more](https://shopify.dev/docs/api/liquid/filters#link_to_vendor)",
+          "paragraph_3": "(2) by selecting a page to show page's content in a popup without leaving the current site. If enabling metafield to show vendor collection in admin, the link will be automatically applied here.",
+          "link_vendor": "Link vendor to associated collection",
+          "select_page": "Select page"
+        }
+      },
+      "rating": {
+        "name": "Product rating",
+        "settings": {
+          "paragraph": "To display a rating, add a product rating app. [Learn more](https://help.shopify.com/en/manual/products/product-reviews)"
+        }
+      },
+      "inventory_status": {
+        "name": "Inventory status"
+      },
+      "sku_barcode": {
+        "name": "SKU/Barcode"
+      },
+      "labels_and_badges": {
+        "name": "Labels and badges",
+        "label_position": {
+          "label": "Label position",
+          "option_1": "On product media",
+          "option_2": "Content inline"
+        }
+      },
+      "qty_selector": {
+        "name": "Quantity selector"
+      },
+      "gift_wrapping": {
+        "name": "Gift wrap",
+        "settings": {
+          "gift_wrapping_label": "Gift wrapping label"
+        }
+      },
+      "variant_picker": {
+        "name": "Variant picker",
+        "settings": {
+          "type": {
+            "label": "Type",
+            "dropdown": "Dropdown",
+            "button": "Button"
+          },
+          "show_variant_labels": "Show variant labels",
+          "enable_color_swatches": "Enable color swatches",
+          "size_chart": {
+            "header": "Size chart",
+            "enable_size_chart": "Enable size chart",
+            "size_chart_label": "Size chart label",
+            "associated_option_name": "Associated option name",
+            "associated_option_name_info": "Size chart link will show under this option."
+          }
+        }
+      },
+      "buy_buttons": {
+        "name": "Buy buttons",
+        "settings": {
+          "show_dynamic_checkout": "Show dynamic checkout buttons",
+          "show_dynamic_checkout_info": "Using the payment methods available on your store, customers see their preferred option, like PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "show_gift_card_recipient": "Show recipient information form for gift card products",
+          "show_add_to_compare": "Show add to compare button",
+          "compare_button": "Compare button label",
+          "pickup_availability": {
+            "header": "Pickup availability",
+            "pickup_availability": "Enable pickup availability feature",
+            "pickup_availability_info": "Learn how to setup this feature [here](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup)",
+            "hide_when_pre_order": "Hide when Pre-order is enabled"
+          },
+          "pre_order": {
+            "header": "Pre-order",
+            "button_info": "\"Pre-order\" will be used by default",
+            "message_info": "Message will show under Pre-order button to provide more information about the item.",
+            "pre_order_show_dynamic_button": "Show dynamic checkout buttons for pre-orders"
+          }
+        }
+      },
+      "product_sibling": {
+        "name": "Sibling products",
+        "settings": {
+          "paragraph": "Link siblings with similar characteristics via a linking option.",
+          "link_option": {
+            "label": "Linking option",
+            "info": "Use \"Load sibling products' content only\" when the siblings are of the same template, and the template content are mostly static. In case each sibling has distinct rich content (e.g. product reviews), use \"Redirect to sibling product pages\" to navigate users directly to the sibling product page.",
+            "option_1": "Load sibling products' content only",
+            "option_2": "Redirect to sibling product pages"
+          },
+          "option_name": "Option name",
+          "option_name_info": "Name of the option that links the siblings (e.g. Color).",
+          "collection_handle_metafield": "Collection handle metafield",
+          "collection_handle_metafield_info": "Create a collection containing the option values as unique products. Create a product metafield to fill in that collection handle for each set of sibling products. Fill in the key of that metafield here (e.g. custom.sibling-collection)",
+          "option_value_metafield": "Option value metafield",
+          "option_value_metafield_info": "Create a product metafield to fill in the option value of each sibling product. Fill in the key of that metafield here (e.g. custom.sibling-color)",
+          "option_display_type": "Option display type"
+        }
+      },
+      "description": {
+        "show_in_tab": "Show in tab",
+        "open_by_default": "Open this tab by default",
+        "make_content_center": "Make description center"
+      },
+      "complementary": {
+        "name": "Complementary products",
+        "settings": {
+          "show_tab": "Show as collapsible tab",
+          "max_product_show": "Maximum products to show",
+          "number_product_per_page": "Number of products per page",
+          "number_product_per_page_info": "Only applies when carousel is enabled."
+        }
+      },
+      "collapsible_tab": {
+        "name": "Collapsible tab",
+        "settings": {
+          "use_secondary_background": "Use secondary background",
+          "tab_content": "Tab content"
+        }
+      },
+      "social_sharing": {
+        "name": "Social sharing"
+      },
+      "popup_link": {
+        "name": "Pop-up link",
+        "settings": {
+          "link_text": "Link text",
+          "link_style": "Link style",
+          "select_page": ""
+        }
+      },
+      "separator": {
+        "name": "Separator"
+      },
+      "space": {
+        "name": "Space",
+        "settings": {
+          "gap": "Gap"
+        }
+      },
+      "custom_html": {
+        "name": "Custom HTML"
+      },
+      "back_in_stock_alert": {
+        "name": "Back in stock alert",
+        "settings": {
+          "paragraph": "Store owner will receive an email when customer fills in this form.",
+          "show_when_product_unavailable": "Only show when product is unavailable",
+          "show_when_product_unavailable_info": "Email alert will NOT be automatically sent to the customer. You will need to do this manually."
+        }
+      },
+      "customizable_options": {
+        "name": "Customizable options",
+        "settings": {
+          "paragraph": "Customizable options are added options to allow products to have more than 3 options in default Shopify. These customizable options are not tracked in product inventory, and will NOT make any change to product prices.",
+          "width_block": {
+            "label": "Width block",
+            "option_1": "Full width",
+            "option_2": "Width 50%"
+          },
+          "option_type": "Option type",
+          "option_name_info": "The option name must be unique.",
+          "text_options": {
+            "header": "Text options",
+            "paragraph": "Only applies to options in Text type: Text field and Text editor",
+            "max_char_length": "Maximum character length",
+            "max_char_length_info": "Input the maximum number of characters needed in the field. Only applicable if the option is required. Leave blank if no maximum length should be applied.",
+            "option_note": "Option note",
+            "option_note_info": "Add a note or explanation for this option."
+          },
+          "select_options": {
+            "header": "Select options",
+            "paragraph": "Only applies to options in Select type: Checkbox, Dropdown and Radio button",
+            "option_values": "Option values",
+            "option_values_info": "Input values for Select type options. Values are separated by a semicolon (Ex: Polo;V-Neck;Boat Neck)",
+            "min_values_req": "Minimum values required",
+            "min_values_req_info": "Input the minimum number of values required to be selected. Only applicable for Checkbox, when the option is required. Leave blank if no limit should be applied.",
+            "max_values_allowed": "Maximum values allowed",
+            "max_values_allowed_info": "Input the maximum number of values could to be selected. Only applicable for Checkbox, when the option is required. Leave blank if no limit should be applied."
+          },
+          "file_upload": {
+            "header": "File upload",
+            "paragraph": "Only applies to options of File upload"
+          },
+          "swatches": {
+            "header": "Swatches",
+            "paragraph": "Only applies to options in Swatches type: Text swatch and Color swatch.",
+            "swatch_values": "Swatch values",
+            "swatch_values_info": "Input values for text swatch or color swatch options. Each value is on one line. For color swatch, input in 'option name:color code' format. (Ex: White:#FFFFFF)",
+            "swatch_style": {
+              "label": "Swatch style",
+              "info": "Only applies to color swatch and color picker options.",
+              "option_1": "Round",
+              "option_2": "Squared"
+            }
+          },
+          "date_time": {
+            "header": "Date & Time",
+            "paragraph": "Only applies to options in Date & Time type: Date, Time",
+            "earliest_date": "Earliest date allowed",
+            "earliest_date_info": "Date format: YYYY-MM-DD",
+            "latest_date": "Latest date allowed"
+          }
+        }
+      },
+      "featured_icon": {
+        "name": "Featured icon",
+        "settings": {
+          "column_content_alignment": "Column content alignment",
+          "feature_1": "Feature 1",
+          "feature_2": "Feature 2",
+          "feature_3": "Feature 3",
+          "feature_4": "Feature 4",
+          "feature_5": "Feature 5",
+          "feature_6": "Feature 6"
+        }
+      },
+      "text_with_icon": {
+        "name": "Text with icon"
+      },
+      "collection_link": {
+        "name": "Collection link",
+        "settings": {
+          "label_info": "Use collection_name to show the collection name in the label."
+        }
+      },
+      "newsletter_signup": {
+        "name": "Newsletter signup"
+      },
+      "payment_methods": {
+        "name": "Payment methods",
+        "settings": {
+          "custom_payment_icons": "Custom payment icons SVG",
+          "custom_payment_icons_info": "Customize your payment icons. For example, fill in this field your chosen methods: apple_pay, google_pay, tabby, tamara. [Learn more](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/add-credit-card-icons#edit-the-code-for-your-payment-icons)"
+        }
+      },
+      "table_information": {
+        "name": "Table of information",
+        "settings": {
+          "left_column_label": "Left column label",
+          "right_column_label": "Right column label",
+          "details": "Details",
+          "details_info": "Use a colon to separate two columns in a table. Use a hyphen to indent rows. Add a new row with line breaks (using SHIFT + ENTER). [Learn more](https://support.omnithemes.com/blogs/maximize-sections-blocks/tabs#:~:text=%F0%9F%A4%94%20How%20to%20add%20a%20tab%20that%20shows%20content%20in%20table%20format%3F)",
+          "extra_details": "Extra details"
+        }
+      },
+      "estimate_delivery": {
+        "name": "Estimated delivery time",
+        "settings": {
+          "paragraph": "To customize message for each product, create a metafield with the key 'custom.delivery_date_message ' and type 'Rich text'. [Learn more about creating metafields.](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields)"
+        }
+      },
+      "video": {
+        "settings": {
+          "caption": "Caption"
+        }
+      },
+      "additional_fee": {
+        "name": "Additional fee",
+        "settings": {
+          "paragraph": "Allow for flexible fee charging, including options for extra services like installation and assembly.",
+          "fee_charging_product": "Fee charging product",
+          "fee_charging_product_info": "Choose 1 product to represent an additional fee. The selected product's inventory must not be tracked.",
+          "alternative_title": "Alternative title",
+          "alternative_title_info": "Leave blank to use the original name from the admin.",
+          "option_1": {
+            "header": "Option 1",
+            "option_style": "Option style",
+            "option_note": "Option note",
+            "option_note_info": "Add a note or explanation for this option if necessary."
+          },
+          "option_2": {
+            "header": "Option 2"
+          },
+          "option_3": {
+            "header": "Option 3"
+          }
+        }
+      }
+    }
+  },
+  "main_register": {
+    "name": "Registration"
+  },
+  "main_reset_password": {
+    "name": "Reset password"
+  },
+  "main_search": {
+    "name": "Search results",
+    "settings": {
+      "filtering_sorting": {
+        "header": "Filtering and sorting",
+        "enable_results_count": "Enable results count"
+      },
+      "blog_card": {
+        "header": "Blog card"
+      }
+    }
+  },
+  "motion_image_banner": {
+    "name": "Motion image banner",
+    "settings": {
+      "paragraph": "Image displays in-line with text before motion, then expands to full banner size after motion.",
+      "overlay_opacity_info": "Modify image opacity after motion.",
+      "before_motion": {
+        "header": "Before motion",
+        "heading_info": "Insert an image using the placeholder format [img] within the line."
+      },
+      "after_motion": {
+        "header": "After motion",
+        "button_label_1": "First button label",
+        "button_link_1": "First button link",
+        "button_style_1": "First button style",
+        "button_label_2": "Second button label",
+        "button_link_2": "Second button link",
+        "button_style_2": "Second button style"
+      },
+      "colors": {
+        "color_heading_before_light": "Heading before motion (light)",
+        "color_scheme_after_motion_light": "Color scheme after motion (light)",
+        "color_heading_before_dark": "Heading before motion (dark)",
+        "color_scheme_after_motion_dark": "Color scheme after motion (dark)"
+      }
+    }
+  },
+  "newsletter": {
+    "name": "Email signup",
+    "settings": {
+      "paragraph": "Each email subscription creates a customer account."
+    },
+    "blocks": {
+      "email_form": {
+        "settings": {
+          "form_width": "Form width"
+        }
+      }
+    }
+  },
+  "page": {
+    "settings": {
+      "paragraph": "Avoid using H1 tag for page heading as it may affect SEO ranking."
+    }
+  },
+  "popup": {
+    "name": "Popup",
+    "settings": {
+      "paragraph": "To make editing easier, only the selecting popup is shown in Theme editor.",
+      "popup_position": "Popup position",
+      "popup_position_info": "Only applies to desktop display.",
+      "image_info": "Image is displayed on desktop only.",
+      "display_rules": {
+        "header": "Display rules",
+        "show_for_guests_only": "Show for guests only",
+        "show_on_mobile": "Show on mobile",
+        "show_on_mobile_info": "For better website accessibility, we recommend that only one popup should be shown on mobile devices.",
+        "enable_schedule": "Enable schedule",
+        "enable_schedule_info": "Set up start and end date in the 'Countdown timer' block to show popup on schedule.",
+        "delay": "Delay",
+        "delay_info": "Delay is disabled in theme editor for editing purposes.",
+        "reappear_after": "Reappear after"
+      },
+      "minimal_popup": {
+        "header": "Minimal Popup",
+        "info": "Show a small sticky message for the popup at the screen bottom. Clicking this message will open the full popup as configured.",
+        "default_style_desktop": {
+          "label": "Default style on desktop",
+          "option_1": "Full",
+          "option_2": "Minimal"
+        },
+        "default_style_mobile": {
+          "label": "Default style on mobile"
+        }
+      }
+    },
+    "blocks": {
+      "countdown_timer": {
+        "name": "Countdown timer",
+        "settings": {
+          "paragraph_1": "Setup the exact time to start countdown timer and show the popup on the storefront.",
+          "paragraph_2": "Setup the exact time to end countdown timer and hide the popup on the storefront.",
+          "colors": {
+            "time_light": "Time (light)",
+            "time_dark": "Time (dark)"
+          }
+        }
+      },
+      "text": {
+        "settings": {
+          "text_info": "Use coupon_code to show the coupon code within the text box.",
+          "coupon_light": "Coupon (light)",
+          "coupon_dark": "Coupon (dark)"
+        }
+      },
+      "button": {
+        "settings": {
+          "button_light": "Button (light)",
+          "button_text_light": "Button text (light)",
+          "button_dark": "Button (dark)",
+          "button_text_dark": "Button text (dark)"
+        }
+      },
+      "social_icons": {
+        "name": "Social icons"
+      }
+    }
+  },
+  "comparison_overlay": {
+    "name": "Product comparison",
+    "settings": {
+      "paragraph": "Enable 'Add to Compare' in theme settings, add items, then click 'Compare' to view and modify results in a popup.",
+      "grid": {
+        "header": "Grid",
+        "text_empty_field": "Text to use for empty fields"
+      }
+    },
+    "blocks": {
+      "rating": {
+        "name": "Product ratings"
+      },
+      "sku": {
+        "name": "SKU"
+      },
+      "description": {
+        "name": "Product description"
+      },
+      "vendor": {
+        "settings": {
+          "link_vendor_to_associated_info": "This links to a page listing all products from the specified vendor."
+        }
+      },
+      "variant_option": {
+        "name": "Variant option",
+        "settings": {
+          "title_info": "This should be the name of the variant option, such as 'Color'."
+        }
+      },
+      "product_metafield": {
+        "name": "Product metafield",
+        "metafield_key": "Metafield key",
+        "metafield_key_info": "Enter a product metafield key. For example: custom.use_conditions"
+      }
+    }
+  }
+}

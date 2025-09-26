@@ -144,9 +144,10 @@ def convert_json_to_parts(max_lines_per_part=500, language="japanese"):
         current_group = []
         current_group_lines = 0
         
+     
         for section in sections:
             # If adding this section would exceed the limit, start a new group
-            if current_group_lines + section['line_count'] > max_lines_per_part and current_group:
+            if (current_group_lines + section['line_count'] > max_lines_per_part) and current_group:
                 grouped_sections.append(current_group)
                 current_group = [section]
                 current_group_lines = section['line_count']
@@ -157,7 +158,7 @@ def convert_json_to_parts(max_lines_per_part=500, language="japanese"):
         # Add the last group if it has sections
         if current_group:
             grouped_sections.append(current_group)
-        
+       
         print(f"\nGrouped into {len(grouped_sections)} parts:")
         for i, group in enumerate(grouped_sections):
             total_lines = sum(s['line_count'] for s in group)

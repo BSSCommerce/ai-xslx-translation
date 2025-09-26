@@ -1,0 +1,456 @@
+{
+  "product_components": {
+    "name": "产品组件",
+    "settings": {
+      "button_link_info": "如果未添加其他链接，则自动链接到所选产品。",
+      "product": {
+        "header": "产品",
+        "product_info": "使用“自定义图片”设置替换默认产品图片。",
+        "show_product_description": "显示产品描述",
+        "custom_image_desktop": "桌面自定义图片",
+        "custom_image_mobile": "移动自定义图片"
+      },
+      "section_layout": {
+        "image_position": "图片位置"
+      }
+    },
+    "blocks": {
+      "product_component": {
+        "name": "产品组件",
+        "settings": {
+          "hotspot": {
+            "name": "热点",
+            "hotspot_icon": "热点图标",
+            "horizontal_desktop_position": "桌面水平位置",
+            "vertical_desktop_position": "桌面垂直位置",
+            "horizontal_mobile_position": "移动水平位置",
+            "vertical_mobile_position": "移动垂直位置"
+          },
+          "media": {
+            "image_info": "建议图片比例为方形。",
+            "icon_info": "这将覆盖图片",
+            "media_style": "媒体样式"
+          }
+        }
+      }
+    }
+  },
+  "product_details": {
+    "name": "产品详情",
+    "blocks": {
+      "highlight_feature": {
+        "name": "亮点功能",
+        "settings": {
+          "desktop_text_alignment": "桌面文本对齐",
+          "mobile_text_alignment": "移动文本对齐"
+        }
+      },
+      "rich_text": {
+        "name": "富文本",
+        "page": "页面内容",
+        "show_border": "显示边框"
+      },
+      "specifications": {
+        "name": "规格",
+        "settings": {
+          "table_detail": "表格详情",
+          "table_detail_info": "在表格中使用冒号分隔两列。使用连字符缩进行。使用换行符（SHIFT + ENTER）添加新行。 [了解更多](https://support.omnithemes.com/blogs/maximize-sections-blocks/tabs#:~:text=%F0%9F%A4%94%20How%20to%20add%20a%20tab%20that%20shows%20content%20in%20table%20format%3F)",
+          "row_shown_by_default": "默认显示的行数"
+        }
+      }
+    }
+  },
+  "product_labels_badges": {
+    "name": "产品标签和徽章",
+    "settings": {
+      "paragraph_1": "使用此部分为您的产品和产品卡添加标签和徽章。 [查看教程](https://support.omnithemes.com/blogs/overlay-group-1/user-guide-product-labels-badges)",
+      "paragraph_2": "在主题编辑器中，点击“保存”以查看更改。",
+      "enable": "启用产品标签和徽章"
+    },
+    "blocks": {
+      "sale_label": {
+        "name": "促销标签",
+        "settings": {
+          "paragraph": "促销标签会自动显示在所有折扣产品上。",
+          "show_on_product_card": "在产品卡上显示",
+          "show_on_product_page": "在产品页面上显示",
+          "show_on_product_page_info": "要在产品信息和快速查看中显示标签和徽章，请在这些部分添加“标签和徽章”模块，或查看 [此指南](https://support.omnithemes.com/blogs/maximize-overlay-group/product-label)。",
+          "display": {
+            "header": "显示",
+            "label_style": {
+              "label": "标签样式",
+              "option_1": "默认",
+              "option_2": "圆角",
+              "option_3": "顶部滚动",
+              "option_4": "底部滚动"
+            },
+            "image_info": "改用图片。",
+            "desktop_label_size": "桌面标签大小",
+            "mobile_label_size": "移动标签大小",
+            "label_opacity": "标签不透明度",
+            "label_position": "标签位置",
+            "label_position_info": "不适用于滚动标签样式。",
+            "colors": {
+              "label_color_light": "标签颜色 (浅色)",
+              "text_color_light": "文本颜色 (浅色)",
+              "border_color_light": "边框颜色 (浅色)",
+              "label_color_dark": "标签颜色 (深色)",
+              "text_color_dark": "文本颜色 (深色)",
+              "border_color_dark": "边框颜色 (深色)"
+            }
+          }
+        }
+      },
+      "sold_out_label": {
+        "name": "售罄标签",
+        "settings": {
+          "paragraph": "售罄标签会自动显示在所有缺货产品上。"
+        }
+      },
+      "text_label": {
+        "name": "文本标签",
+        "settings": {
+          "content_info": "在产品卡上，将每个标签的内容显示在单行中以创建连续标签。",
+          "schedule": {
+            "header": "排程",
+            "paragraph": "设置在开始时间显示标签，在结束时间隐藏标签。",
+            "schedule_enabled": "启用排程",
+            "paragraph_start": "设置精确时间开始显示标签和徽章。",
+            "paragraph_end": "设置精确时间停止显示标签和徽章。"
+          }
+        }
+      },
+      "image_label": {
+        "name": "图片标签"
+      },
+      "pre_order_label": {
+        "name": "预购标签"
+      },
+      "new_product_label": {
+        "name": "新品标签",
+        "settings": {
+          "day_start": {
+            "label": "自以下日期起，在指定天数内显示标签",
+            "option_1": "产品创建日期",
+            "option_2": "产品激活日期"
+          },
+          "day_end": "天数"
+        }
+      }
+    }
+  },
+  "product_picker": {
+    "name": "产品选择器",
+    "settings": {
+      "navigation_panel": {
+        "header": "导航面板",
+        "collection_select_placeholder": "分类选择占位符",
+        "collection_select_placeholder_info": "第一个下拉选择的占位文本。",
+        "price_filter_style": {
+          "label": "价格筛选样式",
+          "option_1": "范围滑块",
+          "option_2": "输入框",
+          "option_3": "范围滑块和输入框"
+        }
+      }
+    },
+    "blocks": {
+      "collection": {
+        "settings": {
+          "alternative_collection_name": "替代分类名称",
+          "filter_1": {
+            "header": "筛选器 1",
+            "filter_name": "筛选器名称",
+            "filter_name_info": "填写在您的筛选应用（例如“搜索和发现”）中创建的筛选器的确切标签。如果支持多种语言，请使用翻译应用将筛选器标签本地化并在此处填写，用分号分隔（例如：Price;Preis;価格）",
+            "dropdown_option_format": {
+              "label": "下拉选项格式",
+              "option_1": "仅文本",
+              "option_2": "带小图片的文本",
+              "option_3": "带大图片的文本"
+            }
+          },
+          "filter_2": {
+            "header": "筛选器 2"
+          },
+          "filter_3": {
+            "header": "筛选器 3"
+          }
+        }
+      }
+    }
+  },
+  "product_recommendations": {
+    "name": "产品推荐",
+    "settings": {
+      "paragraph": "动态推荐会使用订单和产品信息，并随时间推移进行更改和改进。 [了解更多](https://help.shopify.com/themes/development/recommended-products)"
+    }
+  },
+  "product_specifications": {
+    "name": "产品规格",
+    "blocks": {
+      "specification": {
+        "name": "规格",
+        "settings": {
+          "specification_detail": {
+            "header": "规格详情",
+            "list_of_spec": "规格列表",
+            "list_of_spec_info": "按以下格式列出标签和产品元字段键，每行一个：标签:metafield_key（例如：Material:custom.material）。修改“metafield_key”部分以符合您的偏好。"
+          }
+        }
+      }
+    }
+  },
+  "promotion_grid": {
+    "name": "促销网格",
+    "blocks": {
+      "promotion": {
+        "name": "促销",
+        "settings": {
+          "overlay_content": {
+            "header": "叠加内容",
+            "enable_content_overlay": "启用内容叠加",
+            "content_position": "叠加内容位置"
+          },
+          "layout": {
+            "number_of_columns_info": "仅在移动设备上不使用轮播时适用。",
+            "media_position": "媒体位置",
+            "media_position_info": "不适用于叠加内容。"
+          },
+          "sale_label": {
+            "header": "促销标签",
+            "line_1": "第一行",
+            "line_1_size": "第一行字体大小",
+            "line_2": "第二行",
+            "line_2_size": "第二行字体大小",
+            "line_3": "第三行",
+            "line_3_size": "第三行字体大小",
+            "position": "促销标签位置",
+            "style": {
+              "label": "促销标签样式",
+              "option_1": "方形",
+              "option_2": "圆形",
+              "option_3": "旗帜",
+              "option_4": "角度"
+            },
+            "colors": {
+              "label_background": "标签背景",
+              "label_text": "标签文本"
+            }
+          }
+        }
+      },
+      "product": {
+        "settings": {
+          "desktop_size": "桌面尺寸"
+        }
+      }
+    }
+  },
+  "promotion_spotlight": {
+    "name": "促销焦点",
+    "settings": {
+      "min_bg_img_height": "最小背景图片高度",
+      "column_spacing": "列间距",
+      "row_spacing": "行间距",
+      "row_spacing_info": "适用于垂直布局（背景图片高度为 400-450 像素）。"
+    },
+    "blocks": {
+      "countdown_timer": {
+        "bg_overlay_opacity": "背景叠加不透明度"
+      }
+    }
+  },
+  "quick_link": {
+    "name": "快速链接",
+    "settings": {
+      "desktop_layout": {
+        "link_spacing": "链接间距",
+        "show_lines": "显示线条",
+        "show_lines_info": "仅适用于桌面屏幕。"
+      }
+    },
+    "blocks": {
+      "link_item": {
+        "name": "链接项",
+        "settings": {
+          "title": "链接标题",
+          "url": "网址"
+        }
+      }
+    }
+  },
+  "quick_view": {
+    "name": "快速查看",
+    "settings": {
+      "preview_product": "预览产品",
+      "media": {
+        "info": "了解有关 [媒体类型](https://help.shopify.com/manual/products/product-media) 的更多信息"
+      },
+      "product_card": {
+        "show_quick_view_info": "在不离开当前页面的情况下，在弹窗中查看产品详情。",
+        "quick_view_button_label": "快速查看按钮标签",
+        "quick_view_button_label_info": "“快速查看”将作为默认值使用"
+      }
+    },
+    "blocks": {
+      "button_view_product": {
+        "name": "查看产品详情"
+      }
+    }
+  },
+  "recently_viewed": {
+    "name": "最近浏览的产品",
+    "settings": {
+      "paragraph": "如果尚未浏览任何产品，此部分将隐藏。",
+      "enable_clear_history": "启用清除历史记录"
+    }
+  },
+  "related_collections": {
+    "name": "相关分类",
+    "settings": {
+      "paragraph": "创建一个键为“related_collections”且类型为“集合（集合列表）”的集合元字段。前往管理后台的每个集合页面，选择元字段中要在此部分显示的集合。如果未找到元字段数据，主题将根据当前集合中产品的集合自动检测相关集合。",
+      "section_layout": {
+        "max_collections": "最大显示分类数"
+      }
+    }
+  },
+  "rich_text": {
+    "name": "富文本",
+    "blocks": {
+      "caption": {
+        "settings": {
+          "text_style": {
+            "label": "文本样式",
+            "option_1": "副标题",
+            "option_2": "大写"
+          }
+        }
+      },
+      "buttons": {
+        "settings": {
+          "button_label_info": "将标签留空以隐藏按钮。"
+        }
+      },
+      "media": {
+        "settings": {
+          "media_size": "媒体大小",
+          "media_size_info": "仅适用于桌面设备。"
+        }
+      }
+    }
+  },
+  "scrolling_promotion": {
+    "name": "滚动促销",
+    "settings": {
+      "show_section_borders": "显示区块边框",
+      "scrolling": {
+        "header": "滚动",
+        "direction": {
+          "label": "方向",
+          "option_1": "从左到右",
+          "option_2": "从右到左"
+        }
+      }
+    },
+    "blocks": {
+      "icon": {
+        "settings": {
+          "icon_height": "图标高度",
+          "left_spacing": "左间距",
+          "right_spacing": "右间距"
+        }
+      }
+    }
+  },
+  "segmented_banner": {
+    "name": "分段横幅",
+    "settings": {
+      "desktop_layout": {
+        "hero_desktop_height": "主视觉桌面高度"
+      },
+      "mobile_layout": {
+        "hero_mobile_height": "主视觉移动高度"
+      },
+      "colors": {
+        "transition_light": "过渡色 (浅色)",
+        "transition_dark": "过渡色 (深色)"
+      }
+    },
+    "blocks": {
+      "segment": {
+        "name": "分段",
+        "settings": {
+          "banner_content": {
+            "header": "横幅内容"
+          }
+        }
+      }
+    }
+  },
+  "sidebar": {
+    "name": "侧边栏",
+    "settings": {
+      "paragraph": "使用侧边栏来显示目录、促销横幅、突出消息、特色产品，并展示相关的博客标签，以增强用户参与度或实现其他目的。",
+      "sidebar_position": "侧边栏位置",
+      "enable_sticky_side_bar": "启用粘性侧边栏"
+    },
+    "blocks": {
+      "highlight_text": {
+        "name": "突出文本"
+      },
+      "product": {
+        "name": "促销产品"
+      },
+      "promotion_banner": {
+        "name": "促销横幅",
+        "overlay_opacity_info": "仅适用于图片"
+      },
+      "social_sharing": {
+        "name": "社交分享",
+        "settings": {
+          "paragraph": "没有可自定义的设置。"
+        }
+      },
+      "table_of_contents": {
+        "name": "目录",
+        "settings": {
+          "list_style": {
+            "label": "列表样式",
+            "option_1": "数字",
+            "option_2": "项目符号"
+          }
+        }
+      },
+      "blog_tags": {
+        "name": "博客标签"
+      }
+    }
+  },
+  "store_locator": {
+    "name": "门店查找器",
+    "settings": {
+      "pickup_button_label": "自提按钮标签"
+    },
+    "blocks": {
+      "store_location": {
+        "name": "门店位置",
+        "settings": {
+          "image": "门店图片",
+          "image_ratio_info": "专门适用于在选项卡中显示的图片。",
+          "image_ratio_rectangle_option": "矩形 (3:2)",
+          "location_name": "位置名称",
+          "location_name_info": "门店名称需要与您在 [位置设置](/admin/settings/locations) 中定义的门店名称相匹配。",
+          "location_address": "门店地址",
+          "location_address_info": "谷歌地图将查找确切位置。",
+          "pickup_fee": "自提费",
+          "ready_time": "准备时间",
+          "location_details": "位置详情",
+          "button": {
+            "navigation_button_label": "导航按钮标签",
+            "navigation_button_label_info": "此按钮将您重定向到谷歌地图以获取指定地址。"
+          }
+        }
+      }
+    }
+  }
+}
