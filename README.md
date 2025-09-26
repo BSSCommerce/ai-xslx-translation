@@ -1,6 +1,6 @@
 # AI Excel Translation System
 
-This system converts Excel files to JSON parts and translates them using Google's Gemini AI model.
+This system converts Excel/JSON files to JSON parts and translates them using Google's Gemini AI model.
 
 ## Setup
 1. Install python virtual environment
@@ -53,11 +53,26 @@ python main.py --status
 python main.py -s
 ```
 
-**Run Full Pipeline (Excel → JSON → Translate → Merge):**
+**Run Full Pipeline for JSON file (JSON → JSON → Translate → Merge):**
+```bash
+python main.py -c true  --full
+python main.py -c true --language japanese --max-lines-per-part 500 --full
+```
+**If you want to run full pipeline without converting JSON/Excel file to smaller parts**
 ```bash
 python main.py --full
-python main.py --language japanese --items-per-part 200 --full
+python main.py --language chinese --max-lines-per-part 500 --full
 ```
+
+**Run Full Pipeline for Excel file (Excel → JSON → Translate → Merge):**
+```bash
+python main.py -c true --full -t excel
+python main.py -c true --language japanese --items-per-part 200 --full -t excel
+```
+
+
+
+
 
 **Translate Single File:**
 ```bash
