@@ -134,6 +134,9 @@ def translate_all_json_files(language: str) -> bool:
         
         # Get all JSON files
         json_files = list(parts_dir.glob("*.json"))
+        # sort json files by name
+        json_files.sort(key=lambda x: x.stem)
+
         if not json_files:
             logger.warning(f"No JSON files found in {parts_dir}")
             return True
@@ -217,18 +220,18 @@ if __name__ == "__main__":
         exit(1)
     
     # Example: Translate single file
-    print("\n1. Translating single file (p1.json)...")
-    success = translate_single_json_file("japanese", "p1")
-    print(f"Single file translation: {'Success' if success else 'Failed'}")
+    # print("\n1. Translating single file (p1.json)...")
+    # success = translate_single_json_file("japanese", "p1")
+    # print(f"Single file translation: {'Success' if success else 'Failed'}")
     
     # # Example: Translate all files
-    # print("\n2. Translating all files...")
-    # success = translate_all_json_files("japanese")
-    # print(f"All files translation: {'Success' if success else 'Failed'}")
+    print("\n2. Translating all files...")
+    success = translate_all_json_files("chinese")
+    print(f"All files translation: {'Success' if success else 'Failed'}")
     
     # Example: Get status
     print("\n3. Translation status:")
-    status = get_translation_status("japanese")
+    status = get_translation_status("chinese")
     print(f"Language: {status['language']}")
     print(f"Source files: {status['total_source']}")
     print(f"Translated files: {status['total_translated']}")
