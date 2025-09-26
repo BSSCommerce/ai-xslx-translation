@@ -35,16 +35,17 @@ logger = logging.getLogger(__name__)
 class TranslationPipeline:
     """Main translation pipeline that orchestrates all steps."""
     
-    def __init__(self, language: str = "japanese", input_type: str = "json", items_per_part: int = 500):
+    def __init__(self, language: str = "japanese", input_type: str = "json", items_per_part: int = 500, max_lines_per_part: int = 500):
         self.language = language
         self.items_per_part = items_per_part
+        self.max_lines_per_part = max_lines_per_part
         self.input_type = input_type
         self.api_key = os.getenv("GEMINI_API_KEY")
         
         if not self.api_key:
             raise ValueError("GEMINI_API_KEY not found in environment variables")
     
-    def run_full_pipeline(self, clean_output: bool = False) -> Dict:
+    def run_full_pipeline(self) -> Dict:
         """
         Run the complete translation pipeline from Excel to final Excel.
         
@@ -67,7 +68,10 @@ class TranslationPipeline:
             
             # Step 1: Convert Excel to JSON parts
             logger.info("📋 Step 1: Converting Excel to JSON parts...")
-            json_files = convert_excel_to_json_parts(self.items_per_part, self.language)
+            if self.input_type == "excel":
+                json_files = convert_excel_to_json_parts(self.items_per_part, self.language)
+            else:
+                json_files = convert_json_to_parts(self.max_lines_per_part, self.language)
             if not json_files:
                 results["errors"].append("Failed to convert Excel to JSON parts")
                 return results
@@ -132,11 +136,11 @@ class TranslationPipeline:
 
             # Step 1: Convert Excel to JSON parts
             if convert_to_json:
-                logger.info("📋 Step 1: Converting Excel to JSON parts...")
+                logger.info("📋 Step 1: Converting language file to JSON parts...")
                 if self.input_type == "excel":
                     json_files = convert_excel_to_json_parts(self.items_per_part, self.language)
                 else:
-                    json_files = convert_json_to_parts(self.items_per_part, self.language)
+                    json_files = convert_json_to_parts(self.max_lines_per_part, self.language)
                 if not json_files:
                     results["errors"].append("Failed to convert Excel or JSON to JSON parts")
                     return results
@@ -324,6 +328,8 @@ def main():
                        help="Target language (default: japanese)")
     parser.add_argument("--items-per-part", "-i", type=int, default=200,
                        help="Items per JSON part (default: 200)")
+    parser.add_argument("--max-lines-per-part", "-m", type=int, default=500,
+                       help="Max lines per JSON part (default: 500)")
     parser.add_argument("--file", "-f", 
                        help="Translate single file (without extension)")
     parser.add_argument("--status", "-s", default=False, action="store_true",
@@ -345,7 +351,7 @@ def main():
             sys.exit(1)
         
         # Initialize pipeline
-        pipeline = TranslationPipeline(args.language, args.items_per_part, args.input_type)
+        pipeline = TranslationPipeline(args.language, args.input_type, args.items_per_part, args.max_lines_per_part)
         
         # Show status only
         if args.status:
@@ -361,7 +367,7 @@ def main():
         elif args.full:
             # Full pipeline
             print(f"🚀 Running full translation pipeline")
-            results = pipeline.run_full_pipeline(args.clean)
+            results = pipeline.run_full_pipeline()
         else:
             # Default: show status and ask what to do
             status = pipeline.get_pipeline_status()

@@ -1,0 +1,167 @@
+{
+  "tabs": {
+    "name": "选项卡",
+    "settings": {
+      "tab_style": "选项卡样式"
+    },
+    "blocks": {
+      "highlight_tab": {
+        "name": "高亮选项卡",
+        "settings": {
+          "tab_title": "选项卡标题",
+          "enable_divider": "启用分隔线",
+          "icon_1": "图标 1",
+          "icon_2": "图标 2",
+          "icon_3": "图标 3",
+          "icon_4": "图标 4"
+        }
+      },
+      "description_tab": {
+        "name": "描述选项卡",
+        "settings": {
+          "show_product_description": "显示产品描述",
+          "show_product_description_info": "产品描述会自动显示在产品页面上。对于其他页面，请在提供的字段中手动输入所需的描述。"
+        }
+      },
+      "table_tab": {
+        "name": "表格选项卡",
+        "settings": {
+          "right_align_values": "值右对齐"
+        }
+      },
+      "media_tab": {
+        "name": "带文本媒体选项卡",
+        "settings": {
+          "tab_content": {
+            "header": "选项卡内容",
+            "content_page": "页面内容",
+            "content_page_info": "这将覆盖下面添加的内容。"
+          },
+          "tab_media": {
+            "header": "选项卡媒体"
+          },
+          "desktop_media_position": "桌面媒体位置",
+          "mobile_media_position": {
+            "label": "移动媒体位置",
+            "option_1": "第一",
+            "option_2": "第二"
+          }
+        }
+      },
+      "rich_text_tab": {
+        "name": "富文本选项卡"
+      }
+    }
+  },
+  "testimonials": {
+    "name": "客户评价",
+    "settings": {
+      "desktop_background_image": "桌面背景图片",
+      "mobile_background_image": "移动背景图片",
+      "testimonial_title_size": "客户评价标题大小",
+      "desktop_layout": {
+        "column_image_height": "列图片高度"
+      },
+      "mobile_layout": {
+        "show_bg_img": "在移动端显示背景图片"
+      }
+    },
+    "blocks": {
+      "testimonial": {
+        "name": "客户评价",
+        "settings": {
+          "icon": {
+            "option_1": "引用",
+            "option_2": "1 星",
+            "option_3": "2 星",
+            "option_4": "3 星",
+            "option_5": "4 星",
+            "option_6": "5 星"
+          },
+          "caption_image": "标题图片",
+          "additional_text": "附加文本"
+        }
+      }
+    }
+  },
+  "text_columns_width_icons": {
+    "name": "带图标的文本列",
+    "settings": {
+      "icon_position": {
+        "label": "图标位置",
+        "option_1": "文本上方",
+        "option_2": "文本旁边"
+      },
+      "desktop_layout": {
+        "column_layout": "列布局",
+        "section_height": "部分高度"
+      }
+    },
+    "blocks": {
+      "column": {
+        "name": "列"
+      }
+    }
+  },
+  "text_with_image_cards": {
+    "name": "带图片卡的文本",
+    "settings": {
+      "card": {
+        "header": "卡片",
+        "layout": "布局"
+      },
+      "desktop_layout": {
+        "number_of_cards": "卡片数量",
+        "number_of_cards_info": "水平布局每行最多显示两张卡片。"
+      },
+      "mobile_layout": {
+        "number_of_cards": {
+          "info": "水平布局每行显示一张卡片。",
+          "option_1": "1 张卡片",
+          "option_2": "2 张卡片"
+        }
+      }
+    },
+    "blocks": {
+      "card": {
+        "name": "卡片"
+      }
+    }
+  },
+  "utility_bar": {
+    "name": "实用工具栏",
+    "settings": {
+      "paragraph": "选定的方案仅适用于桌面端。"
+    },
+    "blocks": {
+      "menu": {
+        "settings": {
+          "menu_info": "仅显示所选菜单的第一级。"
+        }
+      },
+      "localization_selectors": {
+        "name": "本地化选择器",
+        "settings": {
+          "country_region_selector": "国家/地区选择器",
+          "language_selector": "语言选择器"
+        }
+      }
+    }
+  },
+  "video": {
+    "settings": {
+      "show_hero": "用作英雄区",
+      "show_hero_info": "如果此部分用作英雄区，请启用；否则请禁用。",
+      "cover_image": "封面图片",
+      "custom_horizontal_position": "自定义水平位置",
+      "custom_horizontal_position_info": "仅适用于自定义桌面位置。",
+      "custom_vertical_position": "自定义垂直位置"
+    }
+  },
+  "gift_card_header": {
+    "settings": {
+      "logo_desktop_width": "桌面端标志宽度",
+      "logo_mobile_width": "移动端标志宽度"
+    }
+  }
+}

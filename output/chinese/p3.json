@@ -1,0 +1,395 @@
+{
+  "apps": {
+    "name": "应用程序",
+    "settings": {
+      "include_margins": {
+        "label": "使部分边距与主题相同"
+      }
+    },
+    "presets": "应用程序"
+  },
+  "collection_description": {
+    "name": "系列描述",
+    "show_heading": "显示标题"
+  },
+  "collection_list": {
+    "name": "系列列表",
+    "settings": {
+      "paragraph": "默认情况下，此部分显示所有系列。添加区块以取代默认系列，展示特定的精选系列。",
+      "card": {
+        "header": "系列卡片",
+        "collection_metafield": "使用元字段自动填充系列图片",
+        "image_style": {
+          "label": "图片样式",
+          "option_1": "正方形 (1:1)",
+          "option_2": "矩形 (2:3)",
+          "option_3": "横向 (4:3)",
+          "option_4": "标准 (3:4)",
+          "option_5": "圆形",
+          "option_6": "自然"
+        },
+        "desktop_title_size": "桌面标题大小",
+        "mobile_title_size": "移动标题大小",
+        "show_item_count": "显示商品数量"
+      }
+    },
+    "blocks": {
+      "collection": {
+        "name": "系列",
+        "collection": "系列"
+      },
+      "promotion": {
+        "name": "促销区块"
+      }
+    }
+  },
+  "contact_form": {
+    "name": "联系表单",
+    "settings": {
+      "success_message": "成功消息",
+      "show_additional_content": {
+        "label": "显示额外内容",
+        "option_1": "联系信息",
+        "option_2": "图片",
+        "option_3": "两者",
+        "option_4": "无"
+      },
+      "form_alignment": "表单对齐",
+      "contact_info": {
+        "header": "联系信息",
+        "contact_heading": "联系标题",
+        "information": "信息"
+      }
+    },
+    "blocks": {
+      "name": {
+        "name": "姓名"
+      },
+      "email": {
+        "settings": {
+          "email_info": "提交表单时始终需要电子邮件。"
+        }
+      },
+      "message": {
+        "name": "消息"
+      },
+      "form": {
+        "name": "表单项",
+        "form_input_type": "表单输入类型",
+        "options": "选项",
+        "options_info": "输入下拉菜单、单选按钮和复选框的值。选项之间用分号分隔（例如：客户;合作伙伴;零售商;批发商）"
+      }
+    }
+  },
+  "custom_liquid": {
+    "name": "自定义 Liquid",
+    "settings": {
+      "custom_liquid": "自定义 Liquid",
+      "custom_liquid_info": "添加应用片段或其他 Liquid 代码以创建高级自定义。"
+    }
+  },
+  "drawer_menu": {
+    "name": "抽屉菜单",
+    "settings": {
+      "drawer_menu": "抽屉菜单",
+      "drawer_menu_info": "在此部分下添加名为“抽屉菜单”的区块，以为每个菜单项添加促销和图片。",
+      "desktop_menu_selection": {
+        "label": "桌面菜单选择",
+        "option_1": "悬停时",
+        "option_2": "点击时"
+      },
+      "desktop_drawer_menu_title": "桌面抽屉菜单标题",
+      "mobile_drawer_menu_title": "移动抽屉菜单标题",
+      "drawer_menu_style": {
+        "label": "抽屉菜单样式",
+        "option_1": "主要",
+        "option_2": "次要"
+      },
+      "spacing_desktop": "桌面区块间距",
+      "collection_images": {
+        "header": "系列图片",
+        "show_menu_image_options": {
+          "option_1": "无",
+          "option_2": "特色图片",
+          "option_3": "首个产品图片（适用于系列）",
+          "option_4": "系列图片元字段"
+        },
+        "show_1st_menu_images": "显示一级菜单图片",
+        "show_second_lv_collection_img": {
+          "label": "显示二级系列图片",
+          "option_1": "无",
+          "option_2": "菜单旁边",
+          "option_3": "菜单上方"
+        },
+        "show_2nd_level_menu_image": "显示二级菜单图片",
+        "collection_image_metafield": "系列图片元字段",
+        "collection_image_metafield_info": "使用图片的元字段以获得更好的比例和质量。仅适用于二级菜单。",
+        "image_ratio": "二级图片比例",
+        "enable_drawer_menu_on_mobile": "在移动设备上启用抽屉菜单"
+      }
+    },
+    "blocks": {
+      "drawer_menu": {
+        "settings": {
+          "menu_item": "菜单项",
+          "menu_item_info": "填写您想要转换为超级菜单的一级菜单项的名称（例如：全部商品）",
+          "view_all_title": "“查看全部”链接标题",
+          "promotions": {
+            "header": "促销",
+            "position_promotion": "在大屏幕上的位置",
+            "layout_promotion": "在大屏幕上的布局"
+          },
+          "promotion_1": {
+            "header": "促销 1"
+          },
+          "promotion_2": {
+            "header": "促销 2"
+          }
+        }
+      }
+    }
+  },
+  "email_signup_banner": {
+    "name": "电子邮件注册横幅",
+    "settings": {
+      "paragraph": "每次电子邮件订阅都会创建一个客户账户。",
+      "image_overlay_opacity_info": "仅在桌面端应用叠加。",
+      "show_container_on_desktop": "在桌面端显示容器",
+      "show_background_image_mobile": "在移动设备上显示背景图片",
+      "heading_color": "标题颜色",
+      "text_color": "文本颜色",
+      "container_color": "容器颜色"
+    },
+    "blocks": {
+      "text": {
+        "description": "描述"
+      },
+      "email_form": {
+        "name": "电子邮件表单"
+      }
+    }
+  },
+  "event_calendar": {
+    "name": "活动日历",
+    "settings": {
+      "description": "描述",
+      "time_format": {
+        "label": "时间格式",
+        "option_1": "12小时制",
+        "option_2": "24小时制"
+      },
+      "colors": {
+        "date_light": "日期（浅色）",
+        "date_bg_light": "日期背景（浅色）",
+        "date_dark": "日期（深色）",
+        "date_bg_dark": "日期背景（深色）"
+      }
+    },
+    "blocks": {
+      "event": {
+        "name": "活动",
+        "settings": {
+          "event_name": "活动名称",
+          "event_name_size": "活动名称大小",
+          "summary": "摘要",
+          "detailed_description": "详细描述",
+          "location": "地点",
+          "add_to_calendar_button": "“添加到日历”按钮标签",
+          "event_tickets": {
+            "header": "活动门票",
+            "offer_tickets": "为此活动提供门票",
+            "ticket_link": "门票页面链接",
+            "ticket_link_info": "添加门票页面以向参与者出售门票。创建一个[数字产品](https://help.shopify.com/manual/products/digital-service-product/selling-services-or-digital-products)以提供有关活动的更多信息，并可选择将其从产品列表中隐藏。",
+            "ticket_button_label": "门票按钮标签"
+          },
+          "start_date": {
+            "header": "开始日期"
+          },
+          "end_date": {
+            "header": "结束日期",
+            "has_end_date": "此活动有结束日期"
+          }
+        }
+      }
+    }
+  },
+  "faq": {
+    "name": "常见问题",
+    "settings": {
+      "collapsible": "在可折叠标签中显示",
+      "view_all_label": "“查看全部”按钮标签",
+      "view_all_position": "“查看全部”按钮位置",
+      "view_all_link": "“查看全部”按钮链接",
+      "view_all_link_info": "选择一个常见问题页面。",
+      "show_additional_content": {
+        "label": "显示额外内容",
+        "option_1": "无",
+        "option_2": "图片",
+        "option_3": "额外信息",
+        "option_4": "两者"
+      },
+      "additional_information": "额外信息",
+      "image_info": "有关推荐的图片尺寸，请查阅我们的用户指南。",
+      "desktop_layout": {
+        "additional_content_position": "额外内容位置"
+      },
+      "mobile_layout": {
+        "additional_content_position": {
+          "label": "额外内容位置",
+          "option_1": "图片优先",
+          "option_2": "图片第二"
+        }
+      }
+    },
+    "blocks": {
+      "frequently_asked_question": {
+        "name": "常见问题",
+        "settings": {
+          "question": "问题",
+          "answer": "回答"
+        }
+      }
+    }
+  },
+  "featured_blog": {
+    "name": "博客文章",
+    "settings": {
+      "blog": "博客",
+      "blog_post": "博客文章",
+      "show_more": "显示“显示更多”按钮",
+      "show_more_info": "当启用轮播时，“显示更多”按钮将被禁用。",
+      "view_all_position": "“查看全部”按钮位置",
+      "blog_items": {
+        "header": "博客文章",
+        "show_featured_image": "显示特色图片",
+        "item_secondary_background": "文章次要背景"
+      },
+      "section_layout": {
+        "image_mobile_position": {
+          "option_1": "图片置顶",
+          "option_2": "图片侧边"
+        }
+      }
+    }
+  },
+  "featured_collections": {
+    "name": "精选系列",
+    "settings": {
+      "desktop_heading_alignment": "桌面标题对齐",
+      "view_all_label": "“查看全部”按钮标签",
+      "featured_collection": {
+        "header": "精选系列",
+        "title_style": "标题样式"
+      },
+      "background_image": {
+        "header": "背景图片",
+        "enable_gradient_background": "启用渐变背景图片"
+      },
+      "countdown": {
+        "paragraph": "添加倒计时器以在客户中灌输紧迫感，并鼓励他们购买产品。",
+        "enable_countdown": "启用倒计时器",
+        "show_border": "显示计时器边框"
+      },
+      "desktop_layout": {
+        "number_rows_desktop_info": "这适用于轮播被禁用时。"
+      }
+    }
+  },
+  "flow": {
+    "name": "流程卡片",
+    "settings": {
+      "open_first_tab": "默认打开第一个标签页",
+      "card_section_style": {
+        "label": "卡片部分样式",
+        "option_1": "悬停时",
+        "option_2": "点击时"
+      },
+      "card_content_alignment_desktop": "桌面卡片内容对齐",
+      "card_content_alignment_mobile": "移动卡片内容对齐"
+    }
+  },
+  "footer": {
+    "name": "页脚",
+    "settings": {
+      "hide_footer_on_page": "在特定页面URL上隐藏页脚",
+      "hide_footer_on_page_info": "以相对路径格式填写页面URL，不包含完整域名（例如：/pages/landing page）。每行一个URL。"
+    },
+    "blocks": {
+      "menu": {
+        "settings": {
+          "open_by_default": "在移动设备上默认打开",
+          "number_of_columns_wide": "桌面宽度列数",
+          "menu": "菜单",
+          "menu_info": "仅显示顶级菜单项。",
+          "menu_desktop_layout": "菜单桌面布局"
+        }
+      },
+      "custom_text": {
+        "name": "自定义文本",
+        "settings": {
+          "subtext": "副文本",
+          "show_social_icons": "显示社交图标",
+          "image_light": "图片（浅色）",
+          "image_dark": "图片（深色）",
+          "image_width": "图片宽度"
+        }
+      },
+      "image": {
+        "rounded_corner_image": "启用圆角图片",
+        "image_alignment": "大屏幕图片对齐"
+      },
+      "contact_info": {
+        "name": "联系信息",
+        "settings": {
+          "line_1": "行 1",
+          "line_2": "行 2",
+          "line_3": "行 3"
+        }
+      },
+      "certifications": {
+        "name": "认证",
+        "settings": {
+          "certifications": "认证",
+          "certifications_info": "在“管理 > 内容 > 文件”中找到文件并获取其名称。在此处填写要作为信任徽章显示的图片文件名，每行一个文件名。例如：“certificate-image.jpg”。"
+        }
+      },
+      "newsletter": {
+        "name": "新闻通讯"
+      },
+      "subfooter": {
+        "name": "子页脚",
+        "settings": {
+          "show_block_divider": "在桌面端显示区块分隔线",
+          "show_payment_icons": "显示支付图标",
+          "custom_payment_icon": "自定义支付图标",
+          "custom_payment_icon_info": "通过添加以逗号分隔的[支付名称](https://shopify.dev/docs/api/checkout-ui-extensions/unstable/components/media/paymenticon)（例如：visa,mastercard,klarna），手动添加和重新排列支付图标。",
+          "show_copyright": "显示版权文本",
+          "show_powered_by": "显示“Powered by Shopify”文本",
+          "custom_copyright_text": "自定义版权文本",
+          "country_region_selector": {
+            "header": "国家/地区选择器",
+            "info": "要添加国家/地区，请前往您的[支付设置](/admin/settings/payments)",
+            "enable_country_selector": "启用国家/地区选择器"
+          },
+          "language_selector": {
+            "header": "语言选择器",
+            "info": "要添加语言，请前往您的[语言设置](/admin/settings/languages)",
+            "enable_language_selector": "启用语言选择器"
+          },
+          "follow_on_shop": {
+            "header": "在 Shop 上关注",
+            "info": "在 Shop 应用中显示您店面的关注按钮。[了解更多](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)",
+            "enable_follow_on_shop": "启用在 Shop 上关注"
+          }
+        }
+      },
+      "enlarged_store_name": {
+        "name": "放大商店名称",
+        "settings": {
+          "logo_font_size": "商店名称字体大小",
+          "logo_width": "标志宽度"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,499 @@
+{
+  "settings": {
+    "theme_mode": {
+      "name": "主题模式",
+      "settings": {
+        "enable": "启用主题模式",
+        "mode": {
+          "label": "选择模式",
+          "option_1": "使用设备设置",
+          "option_2": "允许手动切换"
+        },
+        "default_mode": {
+          "label": "默认模式",
+          "option_1": "亮色",
+          "option_2": "暗色"
+        }
+      }
+    },
+    "schemes": {
+      "name": "配色方案"
+    },
+    "colors": {
+      "name": "颜色"
+    },
+    "colors_dark": {
+      "name": "颜色 (深色主题)"
+    },
+    "typography": {
+      "name": "排版",
+      "settings": {
+        "base_size": "基本字号",
+        "transform": "转换",
+        "navigation": "导航",
+        "letter_spacing": "字间距",
+        "buttons": "按钮"
+      }
+    },
+    "design": {
+      "name": "设计",
+      "settings": {
+        "rtl_languages": "RTL 语言",
+        "rtl_languages_info": "输入语言代码以显示 RTL 布局。所有代码必须遵循 [ISO 语言代码表](https://www.w3schools.com/tags/ref_language_codes.asp) 并用逗号分隔（例如：ar,fa,ps）",
+        "page_width": "页面宽度",
+        "edges": {
+          "label": "边缘",
+          "option_1": "方形",
+          "option_2": "圆角"
+        },
+        "header_popup": "弹窗",
+        "minimal_popup_position": "最小弹窗位置",
+        "show_popup_overlay": "显示弹窗覆盖层"
+      }
+    },
+    "products": {
+      "name": "产品",
+      "settings": {
+        "inventory_status": {
+          "header": "库存状态",
+          "low_stock_threshold": "低库存阈值",
+          "low_stock_threshold_info": "建议设置 0 到 200 之间的整数，作为库存倒计时的低库存阈值。",
+          "in_stock_message": "有库存消息",
+          "in_stock_message_info": "个性化产品卡片和产品信息上的库存状态消息。在消息中使用 {qty} 来显示当前产品库存（例如：仅剩 {qty} 件商品）",
+          "low_stock_message": "低库存消息",
+          "low_stock_message_info": "个性化产品卡片和产品信息上的库存状态消息。在消息中使用 {qty} 来显示当前产品库存（例如：仅剩 {qty} 件商品）"
+        },
+        "pre_order": {
+          "header": "预购",
+          "enable": {
+            "label": "启用",
+            "info": "当产品缺货时，请确保在 Shopify 管理后台 > 产品详情页中启用了“缺货时继续销售”。",
+            "option_1": "否",
+            "option_2": "是",
+            "option_3": "当产品缺货时"
+          },
+          "button_label": "卡片按钮标签",
+          "pre_order_message": "预购消息"
+        },
+        "comparison": {
+          "header": "产品对比",
+          "paragraph": "此功能支持产品而非变体的对比。要自定义对比字段，请在“叠加层”组中修改“产品对比”部分。在商品系列或搜索页面预览结果。",
+          "enable": "启用产品对比",
+          "enable_info": "在产品卡片（系列、搜索页面）和产品页面上添加“添加到对比”按钮，以在单个网格中对比产品信息和元字段。",
+          "maximum_products": "最大对比产品数量"
+        }
+      }
+    },
+    "product_cards": {
+      "name": "产品卡片",
+      "settings": {
+        "paragraph": "适用于所有页面的产品卡片",
+        "ratio": "产品图片比例",
+        "container_color_light": "容器颜色 (亮色)",
+        "container_color_dark": "容器颜色 (暗色)",
+        "desktop_side_padding": "桌面侧边内边距",
+        "mobile_side_padding": "移动侧边内边距",
+        "effect_on_hover": {
+          "label": "鼠标悬停效果",
+          "option_1": "无",
+          "option_2": "显示下一张图片",
+          "option_3": "显示图片轮播"
+        },
+        "show_inventory_status": {
+          "label": "显示库存状态",
+          "info": "选择“已售产品”不反映产品的实时库存下降。您必须创建一个键为“custom.product_sold”的元字段，并填写自定义数字以显示为已售产品数量。",
+          "option_1": "无",
+          "option_2": "显示已售产品",
+          "option_3": "库存状态"
+        },
+        "sale_labels": {
+          "header": "促销标签",
+          "show": "显示促销标签",
+          "content": "促销标签内容",
+          "paragraph_1": "您可以在内容中使用以下代码：",
+          "paragraph_2": "{sale} 表示折扣百分比。",
+          "paragraph_3": "{sale_amount} 表示折扣金额。",
+          "paragraph_4": "{qty} 表示库存总数量。",
+          "paragraph_5": "{price} 表示产品价格。",
+          "paragraph_6": "<b>your content</b> 表示粗体文本。",
+          "paragraph_7": "{count_down} 表示距离结束日期的倒计时。（必须启用计划）"
+        },
+        "highlight_attributes": {
+          "header": "突出属性",
+          "paragraph": "创建单行文本类型的产品或变体元字段，以在产品卡片上显示产品突出特点。",
+          "show": "显示突出属性",
+          "icon_metafield_1": "图标元字段 1",
+          "icon_metafield_1_info": "例如：custom.product_icon_1",
+          "label_metafield_1": "标签元字段 1",
+          "label_metafield_1_info": "例如：custom.product_attribute_1",
+          "icon_metafield_2": "图标元字段 2",
+          "icon_metafield_2_info": "例如：custom.product_icon_2",
+          "label_metafield_2": "标签元字段 2",
+          "label_metafield_2_info": "例如：custom.product_attribute_2",
+          "icon_metafield_3": "图标元字段 3",
+          "icon_metafield_3_info": "例如：custom.product_icon_3",
+          "label_metafield_3": "标签元字段 3",
+          "label_metafield_3_info": "例如：custom.product_attribute_3"
+        },
+        "estimated_delivery_date": {
+          "header": "预计送达日期",
+          "show": "显示预计送达日期",
+          "message": "消息",
+          "paragraph_1": "您可以在消息中使用以下代码：",
+          "paragraph_2": "earliest_delivery_date 显示最早送达日期。",
+          "paragraph_3": "latest_delivery_date 显示最晚送达日期。",
+          "paragraph_4": "delivery_duration 显示距离送达的天数",
+          "paragraph_5": "time_to_cut_off 显示距离截止时间的剩余时间",
+          "hide_when_pre_order": "预购启用时隐藏"
+        },
+        "overlay": {
+          "header": "叠加层",
+          "show_quick_add": "显示快速添加按钮",
+          "show_quick_add_info": "无需打开快速查看弹窗或前往产品页面，即可直接从产品卡片添加至购物车。",
+          "quick_add_mobile_position": {
+            "label": "快速添加移动位置",
+            "option_1": "在产品图片上",
+            "option_2": "产品卡片底部"
+          }
+        }
+      }
+    },
+    "gift_wrapping": {
+      "name": "礼品包装",
+      "settings": {
+        "gift_wrapping_product": "礼品包装产品",
+        "product_page_label": "产品页面标签"
+      }
+    },
+    "product_swatches": {
+      "name": "产品色板",
+      "settings": {
+        "general": {
+          "info": "以下设置会自动为商品系列和搜索页面中的筛选器添加颜色样本。",
+          "replace_color_with_variant_images": "用变体图片替换颜色选项",
+          "swatch_style": {
+            "label": "色板样式",
+            "option_1": "圆形",
+            "option_2": "方形",
+            "option_3": "自然"
+          },
+          "swatch_size": "色板尺寸"
+        },
+        "product_card": {
+          "swatches_type": {
+            "label": "色板类型",
+            "option_1": "无",
+            "option_2": "文本",
+            "option_3": "颜色",
+            "option_4": "两者"
+          },
+          "text_option_name": "文本选项名称",
+          "text_option_name_info": "填写用作文本色板的选项名称，不同语言的短语用分号分隔（例如：Size; Taille）。",
+          "text_option_values": "文本选项值",
+          "text_option_values_info": "每行一个“选项名称:值”。",
+          "swatches_color_shown_by_default": "默认显示的颜色样本",
+          "swatches_color_shown_by_default_info": "选择 0 以在产品卡片上显示所有可用样本。",
+          "swatches_text_shown_by_default": "默认显示的文本样本",
+          "swatches_text_shown_by_default_info": "选择 0 以在产品卡片上显示所有可用样本。"
+        },
+        "filter": {
+          "header": "筛选器",
+          "info": "要使用附加颜色或图像值进行筛选，请创建元对象和元对象引用，然后根据您的偏好更改以下设置。[了解如何使用元对象显示可视化筛选器。](https://help.shopify.com/manual/online-store/search-and-discovery/filters#visual-filters)",
+          "display_text_next_to_swatches": "在色板旁边显示文本",
+          "visual_value_style": {
+            "label": "视觉值样式",
+            "option_1": "紧凑",
+            "option_2": "大"
+          }
+        }
+      }
+    },
+    "social_media": {
+      "name": "社交媒体",
+      "settings": {
+        "social_accounts": {
+          "header": "社交账户",
+          "facebook": "Facebook",
+          "facebook_info": "https://facebook.com/shopify",
+          "twitter": "Twitter (X)",
+          "twitter_info": "https://twitter.com/shopify",
+          "pinterest": "Pinterest",
+          "pinterest_info": "https://pinterest.com/shopify",
+          "instagram": "Instagram",
+          "instagram_info": "http://instagram.com/shopify",
+          "tiktok": "TikTok",
+          "tiktok_info": "https://tiktok.com/@shopify",
+          "tumblr": "Tumblr",
+          "tumblr_info": "https://shopify.tumblr.com",
+          "snapchat": "Snapchat",
+          "snapchat_info": "https://www.snapchat.com/add/shopify",
+          "youtube": "YouTube",
+          "youtube_info": "https://www.youtube.com/shopify",
+          "vimeo": "Vimeo",
+          "vimeo_info": "https://vimeo.com/shopify",
+          "linkedin": "Linkedin",
+          "linkedin_info": "https://www.linkedin.com/shopify",
+          "email": "电子邮件地址",
+          "phone": "电话号码"
+        },
+        "social_sharing": {
+          "header": "社交分享",
+          "share_on_facebook": "分享到 Facebook",
+          "share_on_x": "分享到 X",
+          "share_via_email": "通过电子邮件分享",
+          "pin_on_pinterest": "钉到 Pinterest",
+          "share_via_whatsapp": "通过 Whatsapp 分享",
+          "share_via_sms": "通过短信分享"
+        }
+      }
+    },
+    "search_bar": {
+      "name": "搜索栏",
+      "settings": {
+        "enable": {
+          "label": "启用搜索栏",
+          "option_1": "无",
+          "option_2": "默认",
+          "option_3": "精细化"
+        },
+        "desktop_layout": {
+          "label": "桌面布局",
+          "option_1": "松散",
+          "option_2": "紧凑"
+        },
+        "search_results": {
+          "header": "搜索结果",
+          "show_products": "显示产品",
+          "show_articles": "显示文章",
+          "show_collections": "显示系列",
+          "show_pages": "显示页面",
+          "desktop_max_results": "桌面最大结果数",
+          "mobile_max_results": "移动最大结果数",
+          "show_link": "显示搜索结果页面链接"
+        },
+        "default": {
+          "header": "默认搜索栏",
+          "message": "搜索栏默认消息",
+          "popular_search_terms": "热门搜索词",
+          "popular_search_terms_info": "向客户推荐您商店中最常搜索的词，用逗号分隔（例如：T恤, 跑鞋,...）",
+          "search_terms_title": "搜索词标题",
+          "popular_products": "热门产品",
+          "popular_products_title": "热门产品标题",
+          "store_discovery": "商店发现",
+          "store_discovery_title": "商店发现标题",
+          "popular_collections": "热门系列",
+          "popular_collections_title": "热门系列标题"
+        },
+        "speech_search": {
+          "header": "语音搜索",
+          "enable": "启用语音搜索",
+          "enable_info": "语音搜索仅适用于桌面版 Chrome 或 Android（不适用于 iPhone）。",
+          "speech_pulse_color_light": "语音脉冲颜色 (亮色)",
+          "speech_pulse_color_dark": "语音脉冲颜色 (暗色)"
+        },
+        "search_exclusion": {
+          "header": "搜索排除",
+          "paragraph": "将系列从店内搜索和自动推荐中排除。",
+          "exclude_collections": "排除系列"
+        }
+      }
+    },
+    "favicon": {
+      "name": "网站图标",
+      "settings": {
+        "favicon_image": "网站图标图片",
+        "favicon_image_info": "将缩放至 32 x 32 像素"
+      }
+    },
+    "cart": {
+      "name": "购物车",
+      "settings": {
+        "cart_icon": {
+          "label": "购物车图标",
+          "option_1": "购物车",
+          "option_2": "袋子"
+        },
+        "enable_cart_note": "启用购物车备注",
+        "enable_view_cart_button": "启用“查看购物车”按钮",
+        "enable_payment_icons": "启用支付图标",
+        "custom_payment_icons_svg": "自定义支付图标 SVG",
+        "custom_payment_icons_svg_info": "自定义您的支付图标。例如，在此字段中填写您选择的方法：apple_pay, google_pay, tabby, tamara。[了解更多](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/add-credit-card-icons#edit-the-code-for-your-payment-icons)",
+        "continue_shopping": "继续购物",
+        "enable_discount_code_field": "启用折扣码字段",
+        "enable_discount_code_field_info": "如果应用了免费送货代码，折扣后的运费只会在结账页面显示。",
+        "show_savings_amount": "显示节省金额",
+        "enable_terms_and_conditions": "启用条款和条件复选框",
+        "terms_and_conditions_page": "条款和条件页面",
+        "cart_custom_field": {
+          "header": "购物车自定义字段",
+          "enable_custom_field": "启用自定义字段",
+          "enable_custom_field_info": "必须填写“字段标签”才能启用自定义字段。",
+          "mark_as_req": "将自定义字段标记为必填",
+          "field_label": "字段标签",
+          "validation_regex": "验证正则表达式 (高级)",
+          "validation_regex_info": "用于字段验证目的。如果您不熟悉正则表达式，请避免使用。如需正则表达式协助或解决由此产生的问题，请[联系我们的支持团队](https://omnithemes.com/contact/)。"
+        },
+        "cart_upsell": {
+          "header": "购物车追加销售",
+          "enable_in_mini_cart": "在迷你购物车中启用",
+          "paragraph_1": "如果在迷你购物车和购物车页面启用，追加销售推荐将按以下优先级（从高到低）显示：",
+          "paragraph_2": "(1) 通过在购物车追加销售中创建产品元字段且此字段不为空。[有关详细信息，请参阅我们的用户指南。](https://support.omnithemes.com/blogs/maximize-theme-settings/cart)",
+          "paragraph_3": "(2) 通过在以下设置中手动选择产品列表",
+          "paragraph_4": "(3) 通过使用基于 Shopify 产品推荐的动态推荐。[了解更多。](https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations)",
+          "product": "产品",
+          "product_info": "如果您使用产品元字段添加追加销售产品，请将此字段留空。",
+          "number_of_products": "显示产品数量",
+          "section_label": "部分标签",
+          "enable_share_cart_link": "启用“分享购物车”链接"
+        },
+        "catalog_mode": {
+          "header": "目录模式",
+          "hide_cart": "隐藏购物车"
+        }
+      }
+    },
+    "reorder": {
+      "name": "重新订购",
+      "settings": {
+        "enable": "启用重新订购",
+        "enable_info": "在客户账户和客户订单页面显示重新订购按钮"
+      }
+    },
+    "shipping_delivery": {
+      "name": "运送和配送",
+      "settings": {
+        "free_shipping": {
+          "header": "免费送货",
+          "enable": "启用",
+          "order_amount": "免费送货的订单金额",
+          "order_amount_info": "输入符合免费送货条件的订单金额规则（每行一条规则）。格式说明和示例如下：",
+          "paragraph_1": "金额 (100) 适用于没有单独定义金额的任何国家和货币的订单。",
+          "paragraph_2": "货币代码:金额 (USD:100) 适用于使用美元且没有单独定义金额的任何国家的订单。",
+          "paragraph_3": "国家代码:货币代码:金额 (US:USD:100) 适用于来自美国且货币为美元的任何订单。",
+          "paragraph_4": ""
+        },
+        "estimated_shipping_rates": {
+          "header": "预估运费",
+          "paragraph": "根据客户地址在迷你购物车和购物车页面显示预估运费。",
+          "enable": "启用",
+          "auto_calculate": "自动计算运费"
+        },
+        "edt": {
+          "header": "预计送达时间",
+          "min_day": "最少配送天数",
+          "min_day_info": "运送所有订单所需的最少天数。如果需要区分不同配送市场，请使用分号分隔（例如：US:6;GB:3），或填写一个数字以适用于所有可用市场。国家代码应遵循 [ISO 3166 标准。](https://www.iban.com/country-codes)",
+          "min_day_paragraph": "要为每个产品进行自定义，请创建键为“custom.delivery_date_min”、类型为“文本”的元字段。[了解如何创建元字段](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) 或 [联系我们的支持团队](https://omnithemes.com/contact/)。",
+          "max_day": "最多配送天数",
+          "max_day_info": "运送所有订单所需的最大天数。如果需要区分不同配送市场，请使用分号分隔（例如：US:6;GB:3），或填写一个数字以适用于所有可用市场。国家代码应遵循 [ISO 3166 标准。](https://www.iban.com/country-codes)",
+          "max_day_paragraph": "要为每个产品进行自定义，请创建键为“custom.delivery_date_max”、类型为“文本”的元字段。[了解如何创建元字段](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) 或 [联系我们的支持团队](https://omnithemes.com/contact/)。"
+        },
+        "cut_off_time": {
+          "header": "截止时间"
+        },
+        "edt_in_cart": {
+          "header": "购物车中的预计送达时间",
+          "show_in_cart": {
+            "label": "在购物车中显示",
+            "info": "在购物车、结账页面和订单详情中的每个商品下方显示预计送达时间。",
+            "option_1": "无",
+            "option_2": "显示商品预计送达时间",
+            "option_3": "显示购物车预计送达时间"
+          },
+          "edt_info_label": "预计送达日期信息",
+          "paragraph": "要自定义每个产品的消息，请创建一个键为“custom.delivery_date_message”且类型为“富文本”的元字段。[了解如何创建元字段。](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields)",
+          "message": "消息",
+          "message_paragraph_1": "您可以在消息中使用这些代码：",
+          "message_paragraph_2": "earliest_delivery_date 显示最早送达日期。",
+          "message_paragraph_3": "latest_delivery_date 显示最晚送达日期。",
+          "enable_tooltip": "启用工具提示",
+          "tooltip_content": "工具提示内容"
+        },
+        "style": {
+          "date_format": {
+            "label": "日期格式"
+          },
+          "content_box_type": {
+            "label": "内容框类型",
+            "option_1": "方形",
+            "option_2": "圆形"
+          }
+        }
+      }
+    },
+    "scroll_top": {
+      "name": "滚动到顶部",
+      "settings": {
+        "custom_icon": "自定义图标 (SVG 代码)",
+        "custom_icon_info": "如需自定义 SVG 代码协助或解决由此产生的问题，请[联系我们的支持团队](https://omnithemes.com/contact/)。",
+        "desktop_vertical_position": "桌面垂直位置",
+        "mobile_vertical_position": "移动垂直位置"
+      }
+    },
+    "currency_format": {
+      "name": "货币格式",
+      "settings": {
+        "stack_market_currency_values": "堆叠市场货币值",
+        "paragraph": "在货币选择中将您的市场货币显示为单一实体，而不是单独显示特定国家/地区。",
+        "currency_codes": {
+          "header": "货币代码",
+          "paragraph": "购物车和结账价格始终显示货币代码。例如：$1.00 USD。",
+          "show_currency_codes": "显示货币代码"
+        }
+      }
+    },
+    "advanced": {
+      "name": "高级",
+      "settings": {
+        "product_reviews_app": {
+          "label": "产品评论应用",
+          "info": "产品评论应用",
+          "other": "其他"
+        },
+        "custom_code": {
+          "header": "自定义代码",
+          "html_for_head_tag": "<head> 标签的 HTML",
+          "html_for_head_tag_info": "用于在全站应用任何自定义 HTML 代码。放置在所有主题页面（结账页面除外）的 <head> 标签底部。",
+          "paragraph": "如需处理自定义代码或修复与自定义代码相关的问题，请[联系我们](https://omnithemes.com/contact/)。"
+        }
+      }
+    },
+    "seo": {
+      "name": "SEO",
+      "settings": {
+        "show_original_collection_url": "显示原始系列 URL 作为规范标签",
+        "show_original_collection_url_info": "将分页系列页面的原始 URL 显示为规范标签。",
+        "business_info": {
+          "header": "业务信息",
+          "info": "用于在网站的结构化数据和 Google 的 SERP 图表卡中显示。[了解有关组织架构的更多信息](https://developers.google.com/search/docs/appearance/structured-data/organization)。",
+          "enable_organization_schema": "启用组织架构",
+          "site_type": {
+            "label": "网站类型",
+            "option_1": "在线商店",
+            "option_2": "本地线下商店",
+            "option_3": "公司",
+            "option_4": "其他"
+          },
+          "business_name": "商家名称",
+          "founded_on": "成立日期",
+          "description": "描述",
+          "logo": "标志",
+          "logo_info": "图像最小尺寸为 112x112 像素",
+          "address": "地址",
+          "address_info": "按顺序填写地址（所有字段都是可选的）：街道地址、地址所在城镇、地址所在地区、邮政编码、地址国家代码。例如：Rue Improbable 99,Paris,Ile-de-France,75001,FR",
+          "other_address": "其他地址",
+          "other_address_info": "如果您在多个城市、州或国家/地区设有分支机构，请提供多个地址。",
+          "phone": "电话号码",
+          "email_address": "电子邮件"
+        }
+      }
+    },
+    "breadcrumbs": {
+      "name": "面包屑",
+      "settings": {
+        "enable_microdata_schema": "启用微数据架构",
+        "breadcrumbs_separator": "面包屑分隔符",
+        "show_breadcrumb_borders": "显示面包屑边框"
+      }
+    }
+  }
+}

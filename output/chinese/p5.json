@@ -1,0 +1,492 @@
+{
+  "main_product": {
+    "name": "产品信息",
+    "settings": {
+      "enable_sticky_content": "在桌面端启用粘性内容",
+      "make_content_center": "使主要内容居中",
+      "media": {
+        "navigation_buttons_style": {
+          "label": "显示导航按钮",
+          "large_screens_only": "仅限大屏幕",
+          "mobile_only": "仅限移动设备",
+          "always": "始终"
+        },
+        "desktop_media_width": {
+          "label": "桌面媒体宽度",
+          "default": "默认"
+        },
+        "show_media_with_variant_selected": "仅显示与所选变体相关的媒体",
+        "option_to_classify_variant_media": "用于分类变体媒体的选项",
+        "paragraph": "填写用于分类每个变体媒体的选项名称。使用分号分隔不同语言的选项标签（例如：Color;Colour;Couleur）",
+        "zoom_effect": {
+          "label": "缩放效果",
+          "magnifier": "放大镜",
+          "enlarge": "放大"
+        }
+      },
+      "sticky_atc": {
+        "header": "粘性加入购物车",
+        "sticky_add_to_cart_style": {
+          "label": "样式",
+          "bottom_bar": "底部栏"
+        },
+        "show_qty": "显示数量选择器"
+      }
+    },
+    "blocks": {
+      "product_title": {
+        "name": "产品标题",
+        "settings": {
+          "product_title_tag": "产品标题标签"
+        }
+      },
+      "price": {
+        "name": "价格",
+        "settings": {
+          "show_tax_and_shipping": "显示税费状态和运输政策"
+        }
+      },
+      "vendor": {
+        "name": "供应商名称",
+        "settings": {
+          "paragraph_1": "按照以下优先级（从高到低）显示有关产品供应商的更多详细信息：",
+          "paragraph_2": "(1) 通过将供应商名称链接到相应供应商的集合。[了解更多](https://shopify.dev/docs/api/liquid/filters#link_to_vendor)",
+          "paragraph_3": "(2) 通过选择一个页面以在不离开当前站点的情况下在弹出窗口中显示页面内容。如果启用元字段以在管理界面中显示供应商集合，则链接将自动应用于此处。",
+          "link_vendor": "将供应商链接到相关集合",
+          "select_page": "选择页面"
+        }
+      },
+      "rating": {
+        "name": "产品评分",
+        "settings": {
+          "paragraph": "要显示评分，请添加产品评分应用。[了解更多](https://help.shopify.com/en/manual/products/product-reviews)"
+        }
+      },
+      "inventory_status": {
+        "name": "库存状态"
+      },
+      "sku_barcode": {
+        "name": "SKU/条形码"
+      },
+      "labels_and_badges": {
+        "name": "标签和徽章",
+        "label_position": {
+          "label": "标签位置",
+          "option_1": "在产品媒体上",
+          "option_2": "内容内联"
+        }
+      },
+      "qty_selector": {
+        "name": "数量选择器"
+      },
+      "gift_wrapping": {
+        "name": "礼品包装",
+        "settings": {
+          "gift_wrapping_label": "礼品包装标签"
+        }
+      },
+      "variant_picker": {
+        "name": "变体选择器",
+        "settings": {
+          "type": {
+            "label": "类型",
+            "dropdown": "下拉菜单",
+            "button": "按钮"
+          },
+          "show_variant_labels": "显示变体标签",
+          "enable_color_swatches": "启用颜色样本",
+          "size_chart": {
+            "header": "尺码表",
+            "enable_size_chart": "启用尺码表",
+            "size_chart_label": "尺码表标签",
+            "associated_option_name": "关联选项名称",
+            "associated_option_name_info": "尺码表链接将显示在此选项下方。"
+          }
+        }
+      },
+      "buy_buttons": {
+        "name": "购买按钮",
+        "settings": {
+          "show_dynamic_checkout": "显示动态结账按钮",
+          "show_dynamic_checkout_info": "客户可以看到他们喜欢的支付方式，如 PayPal 或 Apple Pay，这些支付方式可在您的商店中使用。[了解更多](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
+          "show_gift_card_recipient": "显示礼品卡产品的收件人信息表单",
+          "show_add_to_compare": "显示添加到比较按钮",
+          "compare_button": "比较按钮标签",
+          "pickup_availability": {
+            "header": "取货可用性",
+            "pickup_availability": "启用取货可用性功能",
+            "pickup_availability_info": "在此处了解如何设置此功能 [这里](https://help.shopify.com/en/manual/shipping/setting-up-and-managing-your-shipping/local-methods/local-pickup)",
+            "hide_when_pre_order": "预购启用时隐藏"
+          },
+          "pre_order": {
+            "header": "预购",
+            "button_info": "默认将使用“预购”",
+            "message_info": "消息将显示在预购按钮下方，以提供有关商品的更多信息。",
+            "pre_order_show_dynamic_button": "显示预购的动态结账按钮"
+          }
+        }
+      },
+      "product_sibling": {
+        "name": "同系列产品",
+        "settings": {
+          "paragraph": "通过链接选项将具有相似特征的同系列产品链接起来。",
+          "link_option": {
+            "label": "链接选项",
+            "info": "当同系列产品使用相同的模板且模板内容大多是静态的时，请使用“仅加载同系列产品的内容”。如果每个同系列产品都有不同的丰富内容（例如产品评论），请使用“重定向到同系列产品页面”以直接将用户导航到同系列产品页面。",
+            "option_1": "仅加载同系列产品内容",
+            "option_2": "重定向到同系列产品页面"
+          },
+          "option_name": "选项名称",
+          "option_name_info": "链接同系列产品的选项名称（例如：颜色）。",
+          "collection_handle_metafield": "集合句柄元字段",
+          "collection_handle_metafield_info": "创建一个包含选项值作为唯一产品的集合。创建一个产品元字段，为每组同系列产品填写该集合句柄。在此处填写该元字段的键（例如：custom.sibling-collection）",
+          "option_value_metafield": "选项值元字段",
+          "option_value_metafield_info": "创建一个产品元字段，以填写每个同系列产品的选项值。在此处填写该元字段的键（例如：custom.sibling-color）",
+          "option_display_type": "选项显示类型"
+        }
+      },
+      "description": {
+        "show_in_tab": "在标签中显示",
+        "open_by_default": "默认打开此标签",
+        "make_content_center": "使描述居中"
+      },
+      "complementary": {
+        "name": "互补产品",
+        "settings": {
+          "show_tab": "显示为可折叠标签",
+          "max_product_show": "显示最多产品数量",
+          "number_product_per_page": "每页产品数量",
+          "number_product_per_page_info": "仅在启用轮播时适用。"
+        }
+      },
+      "collapsible_tab": {
+        "name": "可折叠标签",
+        "settings": {
+          "use_secondary_background": "使用辅助背景",
+          "tab_content": "标签内容"
+        }
+      },
+      "social_sharing": {
+        "name": "社交分享"
+      },
+      "popup_link": {
+        "name": "弹出链接",
+        "settings": {
+          "link_text": "链接文本",
+          "link_style": "链接样式",
+          "select_page": ""
+        }
+      },
+      "separator": {
+        "name": "分隔符"
+      },
+      "space": {
+        "name": "间距",
+        "settings": {
+          "gap": "间距"
+        }
+      },
+      "custom_html": {
+        "name": "自定义 HTML"
+      },
+      "back_in_stock_alert": {
+        "name": "到货提醒",
+        "settings": {
+          "paragraph": "当客户填写此表单时，店主将收到一封电子邮件。",
+          "show_when_product_unavailable": "仅当产品无货时显示",
+          "show_when_product_unavailable_info": "电子邮件提醒不会自动发送给客户。您需要手动发送。"
+        }
+      },
+      "customizable_options": {
+        "name": "可定制选项",
+        "settings": {
+          "paragraph": "可定制选项是附加选项，允许产品拥有超过 Shopify 默认的 3 个选项。这些可定制选项不跟踪产品库存，并且不会对产品价格进行任何更改。",
+          "width_block": {
+            "label": "宽度区块",
+            "option_1": "全宽",
+            "option_2": "宽度 50%"
+          },
+          "option_type": "选项类型",
+          "option_name_info": "选项名称必须唯一。",
+          "text_options": {
+            "header": "文本选项",
+            "paragraph": "仅适用于文本类型选项：文本字段和文本编辑器",
+            "max_char_length": "最大字符长度",
+            "max_char_length_info": "输入字段所需的最大字符数。仅当选项为必填时适用。如果不需要最大长度，请留空。",
+            "option_note": "选项备注",
+            "option_note_info": "为此选项添加备注或说明。"
+          },
+          "select_options": {
+            "header": "选择选项",
+            "paragraph": "仅适用于选择类型选项：复选框、下拉菜单和单选按钮",
+            "option_values": "选项值",
+            "option_values_info": "输入选择类型选项的值。值用分号分隔（例如：Polo;V领;船领）",
+            "min_values_req": "所需最小值的数量",
+            "min_values_req_info": "输入需要选择的最小值的数量。仅适用于复选框，当选项为必填时。如果不需要限制，请留空。",
+            "max_values_allowed": "允许的最大值的数量",
+            "max_values_allowed_info": "输入可以选择的最大值的数量。仅适用于复选框，当选项为必填时。如果不需要限制，请留空。"
+          },
+          "file_upload": {
+            "header": "文件上传",
+            "paragraph": "仅适用于文件上传选项"
+          },
+          "swatches": {
+            "header": "色板",
+            "paragraph": "仅适用于色板类型选项：文本色板和颜色色板。",
+            "swatch_values": "色板值",
+            "swatch_values_info": "输入文本色板或颜色色板选项的值。每个值占一行。对于颜色色板，请以“选项名称:颜色代码”格式输入（例如：White:#FFFFFF）",
+            "swatch_style": {
+              "label": "色板样式",
+              "info": "仅适用于颜色色板和颜色选择器选项。",
+              "option_1": "圆形",
+              "option_2": "方形"
+            }
+          },
+          "date_time": {
+            "header": "日期和时间",
+            "paragraph": "仅适用于日期和时间类型选项：日期、时间",
+            "earliest_date": "最早允许日期",
+            "earliest_date_info": "日期格式：YYYY-MM-DD",
+            "latest_date": "最晚允许日期"
+          }
+        }
+      },
+      "featured_icon": {
+        "name": "特色图标",
+        "settings": {
+          "column_content_alignment": "列内容对齐",
+          "feature_1": "特色 1",
+          "feature_2": "特色 2",
+          "feature_3": "特色 3",
+          "feature_4": "特色 4",
+          "feature_5": "特色 5",
+          "feature_6": "特色 6"
+        }
+      },
+      "text_with_icon": {
+        "name": "带图标的文本"
+      },
+      "collection_link": {
+        "name": "集合链接",
+        "settings": {
+          "label_info": "使用 collection_name 显示标签中的集合名称。"
+        }
+      },
+      "newsletter_signup": {
+        "name": "新闻订阅注册"
+      },
+      "payment_methods": {
+        "name": "支付方式",
+        "settings": {
+          "custom_payment_icons": "自定义支付图标 SVG",
+          "custom_payment_icons_info": "自定义您的支付图标。例如，在此字段中填写您选择的方式：apple_pay, google_pay, tabby, tamara。[了解更多](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/add-credit-card-icons#edit-the-code-for-your-payment-icons)"
+        }
+      },
+      "table_information": {
+        "name": "信息表",
+        "settings": {
+          "left_column_label": "左列标签",
+          "right_column_label": "右列标签",
+          "details": "详细信息",
+          "details_info": "使用冒号分隔表中的两列。使用连字符缩进行。使用换行符（按 SHIFT + ENTER）添加新行。[了解更多](https://support.omnithemes.com/blogs/maximize-sections-blocks/tabs#:~:text=%F0%9F%A4%94%20How%20to%20add%20a%20tab%20that%20shows%20content%20in%20table%20format%3F)",
+          "extra_details": "额外详细信息"
+        }
+      },
+      "estimate_delivery": {
+        "name": "预计送达时间",
+        "settings": {
+          "paragraph": "要为每个产品自定义消息，请创建一个键为“custom.delivery_date_message”且类型为“富文本”的元字段。[了解更多关于创建元字段的信息。](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields)"
+        }
+      },
+      "video": {
+        "settings": {
+          "caption": "标题"
+        }
+      },
+      "additional_fee": {
+        "name": "附加费用",
+        "settings": {
+          "paragraph": "允许灵活收费，包括安装和组装等额外服务选项。",
+          "fee_charging_product": "收费产品",
+          "fee_charging_product_info": "选择 1 个产品作为附加费用。所选产品的库存不得被跟踪。",
+          "alternative_title": "替代标题",
+          "alternative_title_info": "留空以使用管理界面的原始名称。",
+          "option_1": {
+            "header": "选项 1",
+            "option_style": "选项样式",
+            "option_note": "选项备注",
+            "option_note_info": "如有必要，为此选项添加备注或说明。"
+          },
+          "option_2": {
+            "header": "选项 2"
+          },
+          "option_3": {
+            "header": "选项 3"
+          }
+        }
+      }
+    }
+  },
+  "main_register": {
+    "name": "注册"
+  },
+  "main_reset_password": {
+    "name": "重置密码"
+  },
+  "main_search": {
+    "name": "搜索结果",
+    "settings": {
+      "filtering_sorting": {
+        "header": "筛选和排序",
+        "enable_results_count": "启用结果计数"
+      },
+      "blog_card": {
+        "header": "博客卡片"
+      }
+    }
+  },
+  "motion_image_banner": {
+    "name": "动态图像横幅",
+    "settings": {
+      "paragraph": "图像在动态前与文本内联显示，然后在动态后扩展到完整横幅尺寸。",
+      "overlay_opacity_info": "修改动态后的图像不透明度。",
+      "before_motion": {
+        "header": "动态前",
+        "heading_info": "在行内使用占位符格式 [img] 插入图像。"
+      },
+      "after_motion": {
+        "header": "动态后",
+        "button_label_1": "第一个按钮标签",
+        "button_link_1": "第一个按钮链接",
+        "button_style_1": "第一个按钮样式",
+        "button_label_2": "第二个按钮标签",
+        "button_link_2": "第二个按钮链接",
+        "button_style_2": "第二个按钮样式"
+      },
+      "colors": {
+        "color_heading_before_light": "动态前标题（浅色）",
+        "color_scheme_after_motion_light": "动态后配色方案（浅色）",
+        "color_heading_before_dark": "动态前标题（深色）",
+        "color_scheme_after_motion_dark": "动态后配色方案（深色）"
+      }
+    }
+  },
+  "newsletter": {
+    "name": "邮件订阅",
+    "settings": {
+      "paragraph": "每次邮件订阅都会创建一个客户账户。"
+    },
+    "blocks": {
+      "email_form": {
+        "settings": {
+          "form_width": "表单宽度"
+        }
+      }
+    }
+  },
+  "page": {
+    "settings": {
+      "paragraph": "避免在页面标题中使用 H1 标签，因为它可能会影响 SEO 排名。"
+    }
+  },
+  "popup": {
+    "name": "弹出窗口",
+    "settings": {
+      "paragraph": "为方便编辑，主题编辑器中仅显示选定的弹出窗口。",
+      "popup_position": "弹出窗口位置",
+      "popup_position_info": "仅适用于桌面显示。",
+      "image_info": "图像仅在桌面端显示。",
+      "display_rules": {
+        "header": "显示规则",
+        "show_for_guests_only": "仅向访客显示",
+        "show_on_mobile": "在移动设备上显示",
+        "show_on_mobile_info": "为了更好的网站可访问性，我们建议在移动设备上只显示一个弹出窗口。",
+        "enable_schedule": "启用日程安排",
+        "enable_schedule_info": "在“倒计时器”区块中设置开始和结束日期，以按计划显示弹出窗口。",
+        "delay": "延迟",
+        "delay_info": "为方便编辑，主题编辑器中禁用延迟功能。",
+        "reappear_after": "再次出现间隔"
+      },
+      "minimal_popup": {
+        "header": "极简弹出窗口",
+        "info": "在屏幕底部显示一个小的粘性弹出消息。点击此消息将打开按配置显示的完整弹出窗口。",
+        "default_style_desktop": {
+          "label": "桌面默认样式",
+          "option_1": "完整",
+          "option_2": "极简"
+        },
+        "default_style_mobile": {
+          "label": "移动默认样式"
+        }
+      }
+    },
+    "blocks": {
+      "countdown_timer": {
+        "name": "倒计时器",
+        "settings": {
+          "paragraph_1": "设置精确的开始倒计时时间并在店面显示弹出窗口。",
+          "paragraph_2": "设置精确的结束倒计时时间并在店面隐藏弹出窗口。",
+          "colors": {
+            "time_light": "时间（浅色）",
+            "time_dark": "时间（深色）"
+          }
+        }
+      },
+      "text": {
+        "settings": {
+          "text_info": "使用 coupon_code 在文本框中显示优惠码。",
+          "coupon_light": "优惠券（浅色）",
+          "coupon_dark": "优惠券（深色）"
+        }
+      },
+      "button": {
+        "settings": {
+          "button_light": "按钮（浅色）",
+          "button_text_light": "按钮文本（浅色）",
+          "button_dark": "按钮（深色）",
+          "button_text_dark": "按钮文本（深色）"
+        }
+      },
+      "social_icons": {
+        "name": "社交图标"
+      }
+    }
+  },
+  "comparison_overlay": {
+    "name": "产品比较",
+    "settings": {
+      "paragraph": "在主题设置中启用“添加到比较”，添加商品，然后点击“比较”以在弹出窗口中查看和修改结果。",
+      "grid": {
+        "header": "网格",
+        "text_empty_field": "空白字段使用的文本"
+      }
+    },
+    "blocks": {
+      "rating": {
+        "name": "产品评分"
+      },
+      "sku": {
+        "name": "SKU"
+      },
+      "description": {
+        "name": "产品描述"
+      },
+      "vendor": {
+        "settings": {
+          "link_vendor_to_associated_info": "此链接指向列出指定供应商所有产品的页面。"
+        }
+      },
+      "variant_option": {
+        "name": "变体选项",
+        "settings": {
+          "title_info": "这应该是变体选项的名称，例如“颜色”。"
+        }
+      },
+      "product_metafield": {
+        "name": "产品元字段",
+        "metafield_key": "元字段键",
+        "metafield_key_info": "输入产品元字段键。例如：custom.use_conditions"
+      }
+    }
+  }
+}
